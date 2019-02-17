@@ -1,9 +1,9 @@
 import Header from '../components/Header';
-const Index = () => (
+const Contact = () => (
     <div>
         <Header />
-        <p>Index Page (HOME)</p>
+        <p>Contact Us</p>
     </div>
 )
   
-export default Index
+export default Contact;
