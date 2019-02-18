@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
 import Head from 'next/head';
+import HowCanWeHelpCard from '../components/HowCanWeHelpCard';
 
 const Index = () => (
     <Layout>
@@ -11,6 +12,9 @@ const Index = () => (
         <div className="jumbotron">
             <div className="cta-text">Pure Honesty, Solutions, and Satisfaction</div>
             <button className="cta-button">Call to Action</button>
+        </div>
+        <div className="helpCards">
+            <HowCanWeHelpCard ico="tint" title="Test title" text="Lorem ipsum blah blah"/>
         </div>
         <style jsx>{`
             .jumbotron {
