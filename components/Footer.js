@@ -1,6 +1,6 @@
 const Footer = () => (
     <div className="footer">
-        <div className="footer__inner"><i class="far fa-copyright"></i> 2019 Pure Plumbing Solutions. All rights reserved.</div>
+        <div className="footer__inner"><i className="far fa-copyright"></i> 2019 Pure Plumbing Solutions. All rights reserved.</div>
         <div className="social_media_block">
             <a className="social_media_icon" href="#">
                 <i className="fab fa-facebook-f"></i>
