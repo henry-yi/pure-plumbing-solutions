@@ -3,7 +3,7 @@ const Index = () => (
     <Layout>
         <div className="jumbotron">
             <div className="cta-text">Pure Honesty, Solutions, and Satisfaction</div>
-            <div className="cta-button">Call to Action</div>
+            <button className="cta-button">Call to Action</button>
         </div>
         <style jsx>{`
             .jumbotron {
@@ -17,6 +17,7 @@ const Index = () => (
 
             .cta-text {
                 margin-left: 112px;
+                margin-bottom: 22px;
                 color: #FFFFFF;	
                 font-family: "Avenir Next";	
                 font-size: 35px;	
@@ -25,6 +26,7 @@ const Index = () => (
             }
 
             .cta-button {
+                margin-top: 22px;
                 margin-left: 112px;	
                 height: 75px;	
                 width: 319px;	

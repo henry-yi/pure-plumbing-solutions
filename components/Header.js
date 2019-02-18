@@ -41,8 +41,7 @@ const Header = () => (
 
             .header__phone {
                 margin-right: 112px;
-                height: 48px;	
-                width: 256px;	
+                height: 48px;
                 color: #FFFFFF;	
                 font-family: "Avenir Next";	
                 font-size: 24px;	
