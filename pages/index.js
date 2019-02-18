@@ -21,6 +21,7 @@ const Index = () => (
             <HowCanWeHelpCard destination="gas" ico="burn" title="Gas" items={["Gas Leaks","Gas Fitting","Appliances/BBQs","Gas Hot","Water"]}/>
             <HowCanWeHelpCard destination="kitchens & bathrooms" ico="home" title="Kitchens & Bathrooms" items={["Renovations","Appliance Installs","Vanities","Laundries"]}/>
             <HowCanWeHelpCard destination="plumbing & water" ico="toilet" title="Plumbing & Water" items={["Burst Pipes","Toilets","Taps & Showers"]}/>
+        </div>
         <div className="business-points">
             <div className="business-point__title">Pure Plumbing Solutions</div>
             <div className="business-points__bullets">
@@ -87,6 +88,7 @@ const Index = () => (
 
             .business-point__title {
                 margin-left: 112px;
+                padding-top: 74px;
                 color: #000000;
                 font-family: "Avenir Next";
                 font-size: 40px;
