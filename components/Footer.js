@@ -30,14 +30,26 @@ const Footer = () => (
                 line-height: 25px;
                 font-weight: 500;
                 width: 40%;
+                margin-left: 112px;
+                margin-top: 30px;
             }
 
             .social_media_block {
                 text-align: right;
+                margin-right: 112px;
+                margin-top: 30px;
             }
 
-            .social_media_icon {
-                margin: 5px;
+            .fab {
+                margin: 10px;
+                -webkit-transition: all 0.5s;
+                transition: all 0.5s;
+                color: #777;
+                font-size: 30px;
+            }
+
+            .fab:hover {
+                color: lightblue;
             }
     
         `
