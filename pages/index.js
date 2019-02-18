@@ -14,7 +14,12 @@ const Index = () => (
             <button className="cta-button">Call to Action</button>
         </div>
         <div className="helpCards">
-            <HowCanWeHelpCard ico="tint" title="Test title" text="Lorem ipsum blah blah"/>
+            <div className="helpCardTitle">How can we help?</div>
+            <HowCanWeHelpCard destination="hot water" ico="tint" title="Hot Water" items={["Repair & Install","Gas","Electric","Solar"]}/>
+            <HowCanWeHelpCard destination="drainage" ico="wrench" title="Drainage" items={["Blocked Drains","Blocked Toilets","Blocked Sinks","Drain Repair"]}/>
+            <HowCanWeHelpCard destination="gas" ico="burn" title="Gas" items={["Gas Leaks","Gas Fitting","Appliances/BBOs","Gas Hot","Water"]}/>
+            <HowCanWeHelpCard destination="kitchens & bathrooms" ico="home" title="Kitchens & Bathrooms" items={["Renovations","Appliance Installs","Vanities","Laundries"]}/>
+            <HowCanWeHelpCard destination="plumbing & water" ico="toilet" title="Plumbing & Water" items={["Burst Pipes","Toilets","Taps & Showers"]}/>
         </div>
         <style jsx>{`
             .jumbotron {
