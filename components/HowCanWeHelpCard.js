@@ -7,12 +7,17 @@ const HowCanWeHelpCard = (props) => (
                 <i className={"helpCardIco fas fa-" + props.ico} />
                 <br />
                 <p className="cardTitle">{props.title}</p>
-                <div className="cardText">{props.text}</div>
+                <div className="cardText">{
+                    props.items.map((item, index) => (
+                        <div key={index}>{item}</div>
+                    ))
+                    }
+                </div>
             </div>
             <style jsx>{`
                 .cardContainer {
-                    width: 200px;
-                    text-align: center;
+                    width: 250px;
+                    
                     height: 476px;
                     background-color: #FFFFFF;
                     -webkit-transition: all 1s;
@@ -20,16 +25,13 @@ const HowCanWeHelpCard = (props) => (
                 }
 
                 .cardContainer:hover {
-                    background-color: #BA8843;
+                    background-color: #2E69A5;
                 }
 
                 .cardContent {
-                    margin-left: 26px;
-                    margin-right: 26px;
                     margin-top: 30px;
+
                     text-align: center;
-                    float: left;
-                    clear: both
                 }
 
                 .helpCardIco {
@@ -37,11 +39,15 @@ const HowCanWeHelpCard = (props) => (
                 }
 
                 .cardTitle {
-                    font-size: 30px;
+                    font-size: 26px;
                 }
 
                 .cardText {
-                    font-size: 20px;
+                    font-size: 22px;
+                }
+
+                .cardText div {
+                    margin: 7px;
                 }
             `}</style>
         </div>

@@ -17,7 +17,7 @@ const Index = () => (
             <div className="helpCardTitle">How can we help?</div>
             <HowCanWeHelpCard destination="hot water" ico="tint" title="Hot Water" items={["Repair & Install","Gas","Electric","Solar"]}/>
             <HowCanWeHelpCard destination="drainage" ico="wrench" title="Drainage" items={["Blocked Drains","Blocked Toilets","Blocked Sinks","Drain Repair"]}/>
-            <HowCanWeHelpCard destination="gas" ico="burn" title="Gas" items={["Gas Leaks","Gas Fitting","Appliances/BBOs","Gas Hot","Water"]}/>
+            <HowCanWeHelpCard destination="gas" ico="burn" title="Gas" items={["Gas Leaks","Gas Fitting","Appliances/BBQs","Gas Hot","Water"]}/>
             <HowCanWeHelpCard destination="kitchens & bathrooms" ico="home" title="Kitchens & Bathrooms" items={["Renovations","Appliance Installs","Vanities","Laundries"]}/>
             <HowCanWeHelpCard destination="plumbing & water" ico="toilet" title="Plumbing & Water" items={["Burst Pipes","Toilets","Taps & Showers"]}/>
         </div>
@@ -53,6 +53,19 @@ const Index = () => (
                 font-weight: 500;
                 line-height: 48px;
                 text-align: center;
+            }
+
+            .helpCards {
+                display: flex;
+                justify-content: center;
+                margin: 0 112px;
+            }
+
+            .helpCardTitle {
+                font-size: 30px;
+                text-align: center;
+                margin-top: 40px;
+                font-weight: bold;
             }
         `}</style>
     </Layout>
