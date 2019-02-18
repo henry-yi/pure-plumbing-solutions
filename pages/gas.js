@@ -1,13 +1,13 @@
 import Header from '../components/Header';
 import Layout from '../components/Layout';
 
-const Contact = () => (
+const Gas = () => (
     <Layout>
         <div>
             <Header />
-            <p>Contact Us</p>
+            <p>Gas</p>
         </div>
     </Layout>
 )
   
-export default Contact;
+export default Gas;

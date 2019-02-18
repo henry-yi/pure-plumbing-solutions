@@ -16,11 +16,11 @@ const Index = () => (
         </div>
         <div className="helpCards">
             <div className="helpCardTitle">How can we help?</div>
-            <HowCanWeHelpCard destination="hot water" ico="tint" title="Hot Water" items={["Repair & Install","Gas","Electric","Solar"]}/>
+            <HowCanWeHelpCard destination="hotwater" ico="tint" title="Hot Water" items={["Repair & Install","Gas","Electric","Solar"]}/>
             <HowCanWeHelpCard destination="drainage" ico="wrench" title="Drainage" items={["Blocked Drains","Blocked Toilets","Blocked Sinks","Drain Repair"]}/>
             <HowCanWeHelpCard destination="gas" ico="burn" title="Gas" items={["Gas Leaks","Gas Fitting","Appliances/BBQs","Gas Hot","Water"]}/>
-            <HowCanWeHelpCard destination="kitchens & bathrooms" ico="home" title="Kitchens & Bathrooms" items={["Renovations","Appliance Installs","Vanities","Laundries"]}/>
-            <HowCanWeHelpCard destination="plumbing & water" ico="toilet" title="Plumbing & Water" items={["Burst Pipes","Toilets","Taps & Showers"]}/>
+            <HowCanWeHelpCard destination="kitchensbathrooms" ico="home" title="Kitchens & Bathrooms" items={["Renovations","Appliance Installs","Vanities","Laundries"]}/>
+            <HowCanWeHelpCard destination="plumbingwater" ico="toilet" title="Plumbing & Water" items={["Burst Pipes","Toilets","Taps & Showers"]}/>
         </div>
         <div className="callUs">
             <div>Call Us Today <span>(510) 123-1234</span></div>

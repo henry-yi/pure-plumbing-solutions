@@ -1,13 +1,13 @@
 import Header from '../components/Header';
 import Layout from '../components/Layout';
 
-const Contact = () => (
+const Drainage = () => (
     <Layout>
         <div>
             <Header />
-            <p>Contact Us</p>
+            <p>Drainage</p>
         </div>
     </Layout>
 )
   
-export default Contact;
+export default Drainage;
