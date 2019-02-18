@@ -4,7 +4,6 @@ import Layout from '../components/Layout';
 const Drainage = () => (
     <Layout>
         <div>
-            <Header />
             <p>Drainage</p>
         </div>
     </Layout>
