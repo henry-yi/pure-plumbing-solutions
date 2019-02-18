@@ -91,6 +91,7 @@ const Index = () => (
 
             .business-point__title {
                 margin-left: 112px;
+                padding-top: 74px;
                 color: #000000;
                 font-family: "Avenir Next";
                 font-size: 40px;
