@@ -49,7 +49,7 @@ const Footer = () => (
             }
 
             .fab:hover {
-                color: lightblue;
+                color: #2E69A5;
             }
     
         `

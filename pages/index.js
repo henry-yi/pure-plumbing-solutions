@@ -21,6 +21,10 @@ const Index = () => (
             <HowCanWeHelpCard destination="gas" ico="burn" title="Gas" items={["Gas Leaks","Gas Fitting","Appliances/BBQs","Gas Hot","Water"]}/>
             <HowCanWeHelpCard destination="kitchens & bathrooms" ico="home" title="Kitchens & Bathrooms" items={["Renovations","Appliance Installs","Vanities","Laundries"]}/>
             <HowCanWeHelpCard destination="plumbing & water" ico="toilet" title="Plumbing & Water" items={["Burst Pipes","Toilets","Taps & Showers"]}/>
+        </div>
+        <div className="callUs">
+            <div>Call Us Today <span>(510) 123-1234</span></div>
+        </div>
         <div className="business-points">
             <div className="business-point__title">Pure Plumbing Solutions</div>
             <div className="business-points__bullets">
@@ -99,6 +103,20 @@ const Index = () => (
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+            }
+
+            .callUs {
+                background-color: black;
+                height: 128px;
+                font-size: 30px;
+                color: #FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .callUs span {
+                color: #2E69A5;
             }
         `}</style>
     </Layout>
