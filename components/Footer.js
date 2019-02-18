@@ -24,14 +24,24 @@ const footerEmptyStyling = {
     width: "30%"
 }
 
+const socMedIconStyling = {
+    margin: "5px"
+}
+
 const Footer = () => (
     <div style={footerStyling}>
         <div style={footerInnerStyling}>C 2019 Pure Plumbing Solutions. All rights reserved.</div>
         <div style={footerEmptyStyling}></div>
         <div style={footerSocMedStyling}>
-            <i className="fab fa-facebook-f"></i>
-            <i className="fab fa-instagram"></i>
-            <i className="fab fa-linkedin-in"></i>
+            <a style={socMedIconStyling} href="#">
+                <i className="fab fa-facebook-f"></i>
+            </a>
+            <a style={socMedIconStyling} href="#">
+                <i className="fab fa-instagram"></i>
+            </a>
+            <a style={socMedIconStyling} href="#">
+                <i className="fab fa-linkedin-in"></i>
+            </a>
         </div>
     </div>
 )
