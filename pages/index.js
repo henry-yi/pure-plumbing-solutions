@@ -85,7 +85,6 @@ const Index = () => (
 
             .business-points {
                 width: 100%;
-                height: 480px;
                 background-color: #D8D8D8;
             }
 
