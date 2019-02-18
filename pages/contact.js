@@ -1,9 +1,13 @@
 import Header from '../components/Header';
+import Layout from '../components/Layout';
+
 const Contact = () => (
-    <div>
-        <Header />
-        <p>Contact Us</p>
-    </div>
+    <Layout>
+        <div>
+            <Header />
+            <p>Contact Us</p>
+        </div>
+    </Layout>
 )
   
 export default Contact;
