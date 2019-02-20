@@ -16,7 +16,7 @@ const HowCanWeHelpCard = (props) => (
             </div>
             <style jsx>{`
                 .cardContainer {
-                    width: 250px;
+                    width: 320px;
                     
                     height: 476px;
                     background-color: #FFFFFF;
