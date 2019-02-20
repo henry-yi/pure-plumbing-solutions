@@ -1,12 +1,12 @@
 import Header from '../components/Header';
 import Layout from '../components/Layout';
 
-const KitchensBathrooms = () => (
+const SewerAndDrain = () => (
     <Layout>
         <div>
-            <p>Kitchens & Bathrooms</p>
+            <p>Sewer And Drain</p>
         </div>
     </Layout>
 )
   
-export default KitchensBathrooms;
+export default SewerAndDrain;

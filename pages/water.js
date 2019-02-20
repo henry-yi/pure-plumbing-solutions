@@ -1,12 +1,12 @@
 import Header from '../components/Header';
 import Layout from '../components/Layout';
 
-const HotWater = () => (
+const Water = () => (
     <Layout>
         <div>
-            <p>Hot Water</p>
+            <p>Water</p>
         </div>
     </Layout>
 )
   
-export default HotWater;
+export default Water;

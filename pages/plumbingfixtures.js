@@ -1,12 +1,12 @@
 import Header from '../components/Header';
 import Layout from '../components/Layout';
 
-const Drainage = () => (
+const PlumbingFixtures = () => (
     <Layout>
         <div>
-            <p>Drainage</p>
+            <p>Plumbing Fixtures</p>
         </div>
     </Layout>
 )
   
-export default Drainage;
+export default PlumbingFixtures;

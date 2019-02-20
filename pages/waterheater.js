@@ -1,12 +1,12 @@
 import Header from '../components/Header';
 import Layout from '../components/Layout';
 
-const PlumbingWater = () => (
+const WaterHeater = () => (
     <Layout>
         <div>
-            <p>Plumbing Water</p>
+            <p>Water Heater</p>
         </div>
     </Layout>
 )
   
-export default PlumbingWater;
+export default WaterHeater;
