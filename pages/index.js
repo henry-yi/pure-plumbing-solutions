@@ -16,11 +16,12 @@ const Index = () => (
         </div>
         <div className="helpCards">
             <div className="helpCardTitle">How can we help?</div>
-            <HowCanWeHelpCard destination="hotwater" ico="tint" title="Hot Water" items={["Repair & Install","Gas","Electric","Solar"]}/>
-            <HowCanWeHelpCard destination="drainage" ico="wrench" title="Drainage" items={["Blocked Drains","Blocked Toilets","Blocked Sinks","Drain Repair"]}/>
-            <HowCanWeHelpCard destination="gas" ico="burn" title="Gas" items={["Gas Leaks","Gas Fitting","Appliances/BBQs","Gas Hot","Water"]}/>
-            <HowCanWeHelpCard destination="kitchensbathrooms" ico="home" title="Kitchens & Bathrooms" items={["Renovations","Appliance Installs","Vanities","Laundries"]}/>
-            <HowCanWeHelpCard destination="plumbingwater" ico="toilet" title="Plumbing & Water" items={["Burst Pipes","Toilets","Taps & Showers"]}/>
+            <HowCanWeHelpCard destination="waterheater" ico="tint" title="Water Heater" items={["Installation","Repairs","Routine Maintenance","Products"]}/>
+            <HowCanWeHelpCard destination="seweranddrain" ico="wrench" title="Sewer & Drain" items={["Drain Cleaning","Sewer Repairs","Main Line Installation","Underfloor Drain Line Inspection"]}/>
+            <HowCanWeHelpCard destination="gas" ico="burn" title="Gas" items={["Pipe Installation","Leak Detection","Repairs","Appliance Hook Up"]}/>
+            <HowCanWeHelpCard destination="plumbingfixtures" ico="home" title="Plumbing Fixtures" items={["Installation & Repairs","Faucets","Toilets","Sinks","Showers"]}/>
+            <HowCanWeHelpCard destination="water" ico="toilet" title="Water" items={["Pipe Installation","Leak Detection","Repairs","Emergency Shut Off","Pressure Reducing Valve"]}/>
+            <HowCanWeHelpCard destination="homeimprovementplan" ico="toilet" title="Home Improvement Plan" items={["Annual Maintenance Plan","Pure Satisfaction","Honesty","Solutions"]}/>
         </div>
         <div className="callUs">
             <div>Call Us Today <span>(510) 123-1234</span></div>
