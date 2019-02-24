@@ -43,7 +43,7 @@ const Index = () => (
                 flex-direction: column;
                 justify-content: center;
                 width: 100%;
-                height: 420px;
+                height: 690px;
                 background-color: #D8D8D8;
             }
 
@@ -78,7 +78,7 @@ const Index = () => (
             }
 
             .helpCardTitle {
-                font-size: 30px;
+                font-size: 35px;
                 text-align: center;
                 margin-top: 40px;
                 font-weight: bold;

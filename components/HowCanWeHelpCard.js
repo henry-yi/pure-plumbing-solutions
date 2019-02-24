@@ -16,8 +16,8 @@ const HowCanWeHelpCard = (props) => (
             </div>
             <style jsx>{`
                 .cardContainer {
+                    margin: 0 7px;
                     width: 320px;
-                    
                     height: 476px;
                     background-color: #FFFFFF;
                     -webkit-transition: all 1s;
@@ -29,8 +29,7 @@ const HowCanWeHelpCard = (props) => (
                 }
 
                 .cardContent {
-                    margin-top: 30px;
-
+                    margin: 30px 0;
                     text-align: center;
                 }
 
@@ -39,15 +38,15 @@ const HowCanWeHelpCard = (props) => (
                 }
 
                 .cardTitle {
-                    font-size: 26px;
-                }
-
-                .cardText {
                     font-size: 22px;
                 }
 
+                .cardText {
+                    font-size: 18px;
+                }
+
                 .cardText div {
-                    margin: 7px;
+                    margin: 12px 0;
                 }
             `}</style>
         </div>

@@ -3,8 +3,7 @@ import Link from 'next/link';
 const Header = () => (
     <div className="header">
         <div className="header__logo-bar">
-            <div className="header__logo">
-            </div>
+            <div className="header__logo"></div>
             <div className="header__phone">(510) 123-1234</div>
         </div>
         <div className="header__nav-bar">
@@ -36,7 +35,9 @@ const Header = () => (
                 margin-left: 112px;
                 height: 48px;
                 width: 180px;
-                background: #2E69A5;
+                background-image: url("/static/logo.png");
+                background-size: contain;
+                background-repeat: no-repeat;
             }
 
             .header__phone {
