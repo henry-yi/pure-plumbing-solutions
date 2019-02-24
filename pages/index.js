@@ -79,7 +79,7 @@ const Index = () => (
             }
 
             .helpCardTitle {
-                font-size: 35px;
+                font-size: 27px;
                 text-align: center;
                 margin-top: 40px;
                 font-weight: bold;
