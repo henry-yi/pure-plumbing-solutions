@@ -19,6 +19,67 @@ const Header = () => (
                 </Link>                                
         </div>
         <style jsx>{`
+        @media (min-width: 1024px) {
+            .header {
+                width: 100%;
+            }
+
+            .header__logo-bar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 103px;
+                background: #000000;
+            }
+
+            .header__logo {
+                margin-left: 60px;
+                height: 48px;
+                width: 180px;
+                background-image: url("/static/logo.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            .header__phone {
+                margin-right: 60px;
+                height: 48px;
+                color: #FFFFFF;	
+                font-family: "Avenir Next";	
+                font-size: 24px;	
+                font-weight: 500;	
+                line-height: 48px;
+            }
+
+            .header__nav-bar {
+                display: flex;
+                align-items: center;
+                justify-content: center; 
+                height: 77px;
+                width: 100%;
+                background-color: #212222;
+            }
+            .nav-bar__item {
+                text-decoration: none;
+                margin: 0 30px;
+                color: #ffffff;
+                font-family: "Aveni Next";
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 48px;
+            }
+
+            .nav-bar__item:hover {
+                color: #2E69A5;
+                transition: 0.3s;
+            }
+
+            .nav-bar__item--dropdown {
+                cursor: pointer; 
+            }
+        }
+        
+        @media (min-width: 1440px) {
             .header {
                 width: 100%;
             }
@@ -76,6 +137,7 @@ const Header = () => (
             .nav-bar__item--dropdown {
                 cursor: pointer; 
             }
+        }
         `}</style>
     </div>
 )
