@@ -38,6 +38,91 @@ const Index = () => (
             </div>
         </div>
         <style jsx>{`
+        @media (min-width: 1024px) {
+            .jumbotron {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                height: 430px;
+                background-color: #D8D8D8;
+            }
+
+            .cta-text {
+                margin-left: 112px;
+                margin-bottom: 22px;
+                color: #FFFFFF;	
+                font-family: "Avenir Next";	
+                font-size: 35px;	
+                font-weight: 500;	
+                line-height: 48px;
+            }
+
+            .cta-button {
+                margin-top: 22px;
+                margin-left: 112px;	
+                height: 75px;	
+                width: 319px;	
+                background-color: #2E69A5;
+                color: #FFFFFF;
+                font-family: "Avenir Next";
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 48px;
+                text-align: center;
+            }
+
+            .helpCards {
+                display: flex;
+                justify-content: center;
+                margin: 0 112px;
+            }
+
+            .helpCardTitle {
+                font-size: 35px;
+                text-align: center;
+                margin-top: 40px;
+                font-weight: bold;
+            }
+
+            .business-points {
+                width: 100%;
+                background-color: #D8D8D8;
+            }
+
+            .business-point__title {
+                margin-left: 112px;
+                padding-top: 74px;
+                color: #000000;
+                font-family: "Avenir Next";
+                font-size: 40px;
+                font-weight: 500;
+            }
+
+            .business-points__bullets {
+                margin: 0 112px;
+                margin-top: 40px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .callUs {
+                background-color: black;
+                height: 128px;
+                font-size: 30px;
+                color: #FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .callUs span {
+                color: #2E69A5;
+            }
+        }
+
+        @media (min-width: 1440px) {
             .jumbotron {
                 display: flex;
                 flex-direction: column;
@@ -119,6 +204,7 @@ const Index = () => (
             .callUs span {
                 color: #2E69A5;
             }
+        }        
         `}</style>
     </Layout>
 )
