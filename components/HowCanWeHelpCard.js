@@ -75,7 +75,7 @@ const HowCanWeHelpCard = (props) => (
                 }
 
                 .cardTitle {
-                    font-size: 20px;
+                    font-size: 21px;
                     margin: 13px 7px;
                 }
 
