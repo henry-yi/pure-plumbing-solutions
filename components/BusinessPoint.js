@@ -43,7 +43,7 @@ const BusinessPoint = (props) => (
                 justify-content: flex-start;
                 margin-left: 20px;
                 width: 310px;
-                height: 148px;
+                height: 115px;
             }
 
             .icon {
@@ -54,14 +54,14 @@ const BusinessPoint = (props) => (
             .title {
                 margin-left: 25px;
                 font-family: "Avenir Next";
-                font-size: 35px;
+                font-size: 24px;
                 font-weight: 500;
             }
 
             .description {
                 margin-left: 25px;
                 font-family: "Avenir Next";
-                font-size: 24px;
+                font-size: 20px;
                 line-height: 33px;
             }            
         }
