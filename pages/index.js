@@ -15,7 +15,7 @@ const Index = () => (
             <button className="cta-button">Call to Action</button>
         </div>
         <div className="helpCards">
-            <div className="helpCardTitle">How can we help?</div>
+            {/* <div className="helpCardTitle">How can we help?</div> */}
             <HowCanWeHelpCard destination="waterheater" ico="fire" title="Water Heater" items={["Installation","Repairs","Routine Maintenance","Products"]}/>
             <HowCanWeHelpCard destination="seweranddrain" ico="wrench" title="Sewer & Drain" items={["Drain Cleaning","Sewer Repairs","Main Line Installation","Underfloor Drain Line Inspection"]}/>
             <HowCanWeHelpCard destination="gas" ico="burn" title="Gas" items={["Pipe Installation","Leak Detection","Repairs","Appliance Hook Up"]}/>

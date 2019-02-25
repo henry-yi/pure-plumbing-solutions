@@ -17,7 +17,6 @@ const HowCanWeHelpCard = (props) => (
             <style jsx>{`
             @media (min-width: 1024px) {
                 .cardContainer {
-                    margin: 0 7px;
                     width: 320px;
                     height: 356px;
                     background-color: #FFFFFF;
@@ -40,10 +39,12 @@ const HowCanWeHelpCard = (props) => (
 
                 .cardTitle {
                     font-size: 20px;
+                    margin: 13px 7px;
                 }
 
                 .cardText {
                     font-size: 17px;
+                    margin: 0 7px;
                 }
 
                 .cardText div {
