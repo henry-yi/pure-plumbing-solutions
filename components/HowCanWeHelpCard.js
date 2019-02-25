@@ -19,7 +19,7 @@ const HowCanWeHelpCard = (props) => (
                 .cardContainer {
                     margin: 0 7px;
                     width: 320px;
-                    height: 476px;
+                    height: 356px;
                     background-color: #FFFFFF;
                     -webkit-transition: all 1s;
                     transition: all 1s;
@@ -50,7 +50,7 @@ const HowCanWeHelpCard = (props) => (
                     margin: 12px 0;
                 }
             }
-            
+
             @media (min-width: 1440px) {
                 .cardContainer {
                     margin: 0 7px;
