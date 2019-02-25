@@ -6,6 +6,36 @@ const BusinessPoint = (props) => (
             <div className="description">{props.description}</div>        
         </div>
         <style jsx>{`
+        @media (min-width: 320px) {
+            .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin-left: 5px;
+                width: 100%;
+            }
+
+            .icon {
+                margin-top: 15px;
+                color: #2E69A5;
+            }
+
+            .title {
+                margin-left: 10px;
+                font-family: "Avenir Next";
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .description {
+                margin-left: 10px;
+                font-family: "Avenir Next";
+                font-size: 16px;
+                line-height: 33px;
+                margin-bottom: 20px;
+            }            
+        }
+
         @media (min-width: 1024px) {
             .container {
                 display: flex;
