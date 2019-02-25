@@ -40,7 +40,7 @@ const Index = () => (
             </div>
         </div>
         <style jsx>{`
-        @media (min-width: 320px, max-width: 1024px) {
+        @media (min-width: 320px) and (max-width: 1023px) {
             .jumbotron {
                 display: flex;
                 flex-direction: column;
