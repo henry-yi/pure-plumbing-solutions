@@ -32,6 +32,8 @@ const Index = () => (
                 <BusinessPoint title="Local" description="Local trusted plumber that is honest" />
                 <BusinessPoint title="Upfront" description="An upfront price, so there's no 'guessing'" />
                 <BusinessPoint title="$0 Callout" description="We don't charge a call out fee" />
+            </div>
+            <div className="business-points__bullets">
                 <BusinessPoint title="Clean" description="We're clean and tidy!" />
                 <BusinessPoint title="On Time" description="Arrival time and courtesy SMS before we arrive" />
                 <BusinessPoint title="Free Quotes" description="No obligations, free quotes!" />            
@@ -164,31 +166,32 @@ const Index = () => (
 
             .helpCardTitle {
                 font-size: 35px;
-                text-align: center;
+                text-align: left;
                 margin-top: 40px;
                 font-weight: bold;
             }
 
             .business-points {
+                padding-bottom: 40px;
                 width: 100%;
                 background-color: #D8D8D8;
             }
 
             .business-point__title {
                 margin-left: 112px;
-                padding-top: 74px;
+                padding-top: 40px;
                 color: #000000;
                 font-family: "Avenir Next";
-                font-size: 40px;
+                font-size: 35px;
                 font-weight: 500;
             }
 
             .business-points__bullets {
                 margin: 0 112px;
-                margin-top: 40px;
+                margin-top: 30px;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
+                justify-content: space-around;
             }
 
             .callUs {

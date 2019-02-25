@@ -15,10 +15,10 @@ const HowCanWeHelpCard = (props) => (
                 </div>
             </div>
             <style jsx>{`
+            @media (min-width: 1440px) {
                 .cardContainer {
-                    margin: 0 7px;
                     width: 320px;
-                    height: 476px;
+                    height: 360px;
                     background-color: #FFFFFF;
                     -webkit-transition: all 1s;
                     transition: all 1s;
@@ -42,12 +42,14 @@ const HowCanWeHelpCard = (props) => (
                 }
 
                 .cardText {
+                    margin: 0 7px;
                     font-size: 18px;
                 }
 
                 .cardText div {
                     margin: 12px 0;
                 }
+            }
             `}</style>
         </div>
     </Link>
