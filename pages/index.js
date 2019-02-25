@@ -51,7 +51,7 @@ const Index = () => (
             }
 
             .cta-text {
-                margin-left: 112px;
+                margin-left: 60px;
                 margin-bottom: 22px;
                 color: #FFFFFF;	
                 font-family: "Avenir Next";	
@@ -62,7 +62,7 @@ const Index = () => (
 
             .cta-button {
                 margin-top: 22px;
-                margin-left: 112px;	
+                margin-left: 60px;	
                 height: 75px;	
                 width: 319px;	
                 background-color: #2E69A5;
@@ -77,11 +77,11 @@ const Index = () => (
             .helpCards {
                 display: flex;
                 justify-content: center;
-                margin: 0 112px;
+                margin: 0 60px;
             }
 
             .helpCardTitle {
-                font-size: 35px;
+                font-size: 27px;
                 text-align: center;
                 margin-top: 40px;
                 font-weight: bold;
@@ -93,16 +93,16 @@ const Index = () => (
             }
 
             .business-point__title {
-                margin-left: 112px;
+                margin-left: 60px;
                 padding-top: 74px;
                 color: #000000;
                 font-family: "Avenir Next";
-                font-size: 40px;
+                font-size: 30px;
                 font-weight: 500;
             }
 
             .business-points__bullets {
-                margin: 0 112px;
+                margin: 0 60px;
                 margin-top: 40px;
                 display: flex;
                 flex-wrap: wrap;
