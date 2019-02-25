@@ -29,13 +29,13 @@ const Index = () => (
         <div className="business-points">
             <div className="business-point__title">Pure Plumbing Solutions</div>
             <div className="business-points__bullets">
-                <BusinessPoint title="Local" description="Local trusted plumber that is honest" />
-                <BusinessPoint title="Upfront" description="An upfront price, so there's no 'guessing'" />
-                <BusinessPoint title="$0 Callout" description="We don't charge a call out fee" />
+                <BusinessPoint title="Local Plumber" description="Local to San Jose and serving most of the Silicon Valley" />
+                <BusinessPoint title="Honest" description="We will always give you an honest estimate that will not change!" />
+                <BusinessPoint title="$0 Solutions" description="We will always have a solution to your issue or there will be no charge to you!" />
             </div>
             <div className="business-points__bullets">
-                <BusinessPoint title="Clean" description="We're clean and tidy!" />
-                <BusinessPoint title="On Time" description="Arrival time and courtesy SMS before we arrive" />
+                <BusinessPoint title="Clean" description="We are best known for the clean and tidy job we do" />
+                <BusinessPoint title="On Time" description="We will always be on time within the hour window you are given" />
                 <BusinessPoint title="Free Quotes" description="No obligations, free quotes!" />            
             </div>
         </div>
@@ -88,13 +88,14 @@ const Index = () => (
             }
 
             .business-points {
+                padding-bottom: 40px;
                 width: 100%;
                 background-color: #D8D8D8;
             }
 
             .business-point__title {
                 margin-left: 60px;
-                padding-top: 74px;
+                padding-top: 40px;
                 color: #000000;
                 font-family: "Avenir Next";
                 font-size: 30px;
@@ -172,7 +173,7 @@ const Index = () => (
             }
 
             .business-points {
-                padding-bottom: 40px;
+                padding-bottom: 60px;
                 width: 100%;
                 background-color: #D8D8D8;
             }
