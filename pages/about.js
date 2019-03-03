@@ -1,11 +1,22 @@
-import Header from '../components/Header';
+import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 
 const About = () => (
     <Layout>
-        <div>
-            <p>About Us</p>
-        </div>
+        <Banner title="About Pure Plumbing Solutions"/>
+        <style jsx>{`
+            @media (min-width: 320px) and (max-width: 1023px) {
+
+            }
+
+            @media (min-width: 1024px) {
+
+            }
+
+            @media (min-width: 1440px) {
+
+            }
+        `}</style>
     </Layout>
 )
   
