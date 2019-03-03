@@ -6,7 +6,7 @@ const BusinessPoint = (props) => (
             <div className="description">{props.description}</div>        
         </div>
         <style jsx>{`
-        @media (min-width: 320px) {
+        @media (min-width: 320px) and (max-width: 1023px) {
             .container {
                 display: flex;
                 flex-direction: row;

@@ -13,7 +13,7 @@ const Footer = () => (
             </a>
         </div>
         <style jsx>{`
-        @media (min-width: 320px) {
+        @media (min-width: 320px) and (max-width: 1023px) {
             .footer {
                 background-color: #212222;
                 height: 175px;
@@ -47,10 +47,6 @@ const Footer = () => (
                 transition: all 0.5s;
                 color: #777;
                 font-size: 30px;
-            }
-
-            .fab:hover {
-                color: #2E69A5;
             }
         }
 

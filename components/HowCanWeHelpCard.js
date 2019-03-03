@@ -15,17 +15,13 @@ const HowCanWeHelpCard = (props) => (
                 </div>
             </div>
             <style jsx>{`
-            @media (min-width: 320px) {
+            @media (min-width: 320px) and (max-width: 1023px) {
                 .cardContainer {
                     width: 310px;
                     background-color: #FFFFFF;
                     -webkit-transition: all 1s;
                     transition: all 1s;
                     border-bottom: 1px solid black;
-                }
-
-                .cardContainer:hover {
-                    background-color: #2E69A5;
                 }
 
                 .cardContent {
