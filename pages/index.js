@@ -24,7 +24,7 @@ const Index = () => (
         </div>
         <div className="callUs">
             <div className="callUsText">Call Us Today</div>
-            <div className="callUsPhone">(510) 123-1234</div>
+            <div className="callUsPhone">(408) 891-0720</div>
         </div>
         <div className="business-points">
             <div className="business-point__title">Pure Plumbing Solutions</div>

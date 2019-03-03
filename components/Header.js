@@ -4,7 +4,7 @@ const Header = () => (
     <div className="header">
         <div className="header__logo-bar">
             <div className="header__logo"></div>
-            <div className="header__phone">(510) 123-1234</div>
+            <div className="header__phone">(408) 891-0720</div>
         </div>
         <div className="header__nav-bar">
                 <Link href="/">

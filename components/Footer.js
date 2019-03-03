@@ -8,8 +8,8 @@ const Footer = () => (
             <a className="social_media_icon" href="#">
                 <i className="fab fa-instagram"></i>
             </a>
-            <a className="social_media_icon" href="#">
-                <i className="fab fa-linkedin-in"></i>
+            <a className="social_media_icon" href="https://www.yelp.com/biz/pure-plumbing-solutions-los-gatos">
+                <i className="fab fa-yelp"></i>
             </a>
         </div>
         <style jsx>{`
