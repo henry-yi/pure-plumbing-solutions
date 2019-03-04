@@ -1,7 +1,14 @@
 module.exports = {
-    exportPathMap: function () {
-      return {
-        '/': { page: '/' }
-      }
+  exportPathMap: function () {
+    return {
+      '/': { page: '/' },
+      '/about': { page: '/about' },
+      '/waterheater': { page: '/waterheater' },
+      '/seweranddrain': { page: '/seweranddrain' },
+      '/gas': { page: '/gas' },
+      '/plumbingfixtures': { page: '/plumbingfixtures' },
+      '/water': { page: '/water' },
+      '/homeimprovementplan': { page: '/homeimprovementplan' }
     }
   }
+}
