@@ -23,14 +23,14 @@ const Index = () => (
         <div className="business-points">
             <div className="business-point__title">Pure Plumbing Solutions</div>
             <div className="business-points__bullets">
-                <BusinessPoint title="Local Plumber" description="Local to San Jose and serving most of the Silicon Valley" />
-                <BusinessPoint title="Honest" description="We will always give you an honest estimate that will not change!" />
-                <BusinessPoint title="$0 Solutions" description="We will always have a solution to your issue or there will be no charge to you!" />
+                <BusinessPoint source="index" title="Local Plumber" description="Local to San Jose and serving most of the Silicon Valley" />
+                <BusinessPoint source="index" title="Honest" description="We will always give you an honest estimate that will not change!" />
+                <BusinessPoint source="index" title="$0 Solutions" description="We will always have a solution to your issue or there will be no charge to you!" />
             </div>
             <div className="business-points__bullets">
-                <BusinessPoint title="Clean" description="We are best known for the clean and tidy job we do" />
-                <BusinessPoint title="On Time" description="We will always be on time within the hour window you are given" />
-                <BusinessPoint title="Free Quotes" description="No obligations, free quotes!" />            
+                <BusinessPoint source="index" title="Clean" description="We are best known for the clean and tidy job we do" />
+                <BusinessPoint source="index" title="On Time" description="We will always be on time within the hour window you are given" />
+                <BusinessPoint source="index" title="Free Quotes" description="No obligations, free quotes!" />            
             </div>
         </div>
         <style jsx>{`
@@ -201,7 +201,7 @@ const Index = () => (
                 margin-top: 40px;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
+                justify-content: space-around;
             }
 
             .callUs {

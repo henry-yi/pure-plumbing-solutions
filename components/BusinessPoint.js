@@ -42,7 +42,7 @@ const BusinessPoint = (props) => (
                 flex-direction: row;
                 justify-content: flex-start;
                 margin-left: 20px;
-                width: 250px;
+                width: ${sizes[props.source].medium};
                 height: 148px;
             }
 
@@ -72,7 +72,7 @@ const BusinessPoint = (props) => (
                 flex-direction: row;
                 justify-content: flex-start;
                 margin-left: 20px;
-                width: 310px;
+                width: ${sizes[props.source].large};
                 height: 130px;
             }
 
@@ -98,5 +98,16 @@ const BusinessPoint = (props) => (
         `}</style>
     </div>
 )
+
+const sizes = {
+    index: {
+        medium: "250px",
+        large: "310px"
+    },
+    subpage: {
+        medium: "40%",
+        large: "40%"
+    }
+}
 
 export default BusinessPoint;
