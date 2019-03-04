@@ -20,7 +20,9 @@ const Gas = () => (
         </div>
         <style jsx>{`
         @media (min-width: 320px) and (max-width: 1023px) {
-            
+            .bPRow {
+                margin: 20px 13px;
+            }
         }
 
         @media (min-width: 1024px) {
