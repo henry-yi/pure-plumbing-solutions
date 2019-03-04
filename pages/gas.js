@@ -12,6 +12,26 @@ const Gas = () => (
         <BusinessPoint title="Drain Repair" description="Drains can crack or break from a number of different reasons causing huge plumbing problems. The cracked or broken drain can cause restricted flow and drain blockages. Our plumbers are trained to locate the obstruction or damage and repair it – ensuring your home is back up and running with minimal disruption." />
         <BusinessPoint title="Blocked Toilets & Blocked Sinks" description="Is your toilet or sink unable to empty or clearing very slowly? Or is your sink making loud unusual sounds when draining? Your toilet blockage or sink blockage could be due to tree roots, foreign objects or fats. All our qualified Perth plumbers carry the necessary equipment to unblock your toilet or unblock your sinks, and can help you fix your blockage today." />
         <BusinessPoint title="Drain Replacement" description="An older property comes with older drains, old clay drains (which are no longer used in modern plumbing) can crack and are susceptible to root invasion. Old galvanised steel drains can rust and leak or rust and block. Our plumbers are qualified to assess, upgrade and replace your drains." />
+        <style jsx>{`
+        @media (min-width: 320px) and (max-width: 1023px) {
+            
+        }
+
+        @media (min-width: 1024px) {
+            .bannerImage {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                height: 430px;
+                background-color: #D8D8D8;
+            }
+        }
+
+        @media (min-width: 1440px) {
+            
+        }
+        `}</style>
     </SubPage>
 )
   
