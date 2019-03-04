@@ -72,7 +72,6 @@ const BusinessPoint = (props) => (
                 justify-content: flex-start;
                 margin-left: 20px;
                 width: ${sizes[props.source].large};
-                height: 130px;
             }
 
             .icon {
@@ -104,8 +103,8 @@ const sizes = {
         large: "310px"
     },
     subpage: {
-        medium: "40%",
-        large: "40%"
+        medium: "45%",
+        large: "45%"
     }
 }
 

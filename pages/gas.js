@@ -39,7 +39,18 @@ const Gas = () => (
         }
 
         @media (min-width: 1440px) {
-            
+            .bPContainer {
+                padding-bottom: 60px;
+                width: 100%;
+            }
+
+            .bPRow {
+                margin: 0 112px;
+                margin-top: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }            
         }
         `}</style>
     </SubPage>
