@@ -1,5 +1,3 @@
-import Header from '../components/Header';
-import Layout from '../components/Layout';
 import SubPage from '../components/SubPage';
 import BusinessPoint from '../components/BusinessPoint';
 
