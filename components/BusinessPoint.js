@@ -43,7 +43,6 @@ const BusinessPoint = (props) => (
                 justify-content: flex-start;
                 margin-left: 20px;
                 width: ${sizes[props.source].medium};
-                height: 148px;
             }
 
             .icon {

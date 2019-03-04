@@ -27,16 +27,14 @@ const Gas = () => (
             .bPContainer {
                 padding-bottom: 40px;
                 width: 100%;
-                background-color: #FFFFFF;
-                padding-left: 60px;
-                padding-right: 60px;
             }
 
             .bPRow {
+                margin: 0 60px;
                 margin-top: 40px;
-                height: 300px;
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: space-around;
             }
         }
 
