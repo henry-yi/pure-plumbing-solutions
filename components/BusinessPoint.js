@@ -16,7 +16,7 @@ const BusinessPoint = (props) => (
             }
 
             .icon {
-                margin-top: 15px;
+                margin-top: 5px;
                 color: #2E69A5;
             }
 
@@ -46,7 +46,7 @@ const BusinessPoint = (props) => (
             }
 
             .icon {
-                margin-top: 15px;
+                margin-top: 8px;
                 color: #2E69A5;
             }
 
@@ -75,7 +75,7 @@ const BusinessPoint = (props) => (
             }
 
             .icon {
-                margin-top: 15px;
+                margin-top: 8px;
                 color: #2E69A5;
             }
 
