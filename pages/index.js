@@ -201,7 +201,7 @@ const Index = () => (
                 margin-top: 40px;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-around;
+                justify-content: center;
             }
 
             .callUs {
@@ -291,7 +291,7 @@ const Index = () => (
                 margin-top: 30px;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-around;
+                justify-content: center;
             }
 
             .callUs {
