@@ -1,5 +1,4 @@
 import Layout from '../components/Layout';
-import Head from 'next/head';
 import HowCanWeHelpCard from '../components/HowCanWeHelpCard';
 import BusinessPoint from '../components/BusinessPoint';
 
