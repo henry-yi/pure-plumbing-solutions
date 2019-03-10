@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 
 const About = () => (
     <Layout>
-        <Banner title="About Pure Plumbing Solutions"/>
+        <Banner title="About Pure Plumbing Solutions" items={[]}/>
         <div className="about-container">
             <div className="key-point">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non nunc libero. Donec scelerisque ultrices mattis. Aliquam sapien ligula, eleifend in magna vel, condimentum accumsan magna. Aliquam fringilla elementum ex, in eleifend ipsum vulputate non.</p>

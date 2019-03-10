@@ -16,6 +16,9 @@ const Header = () => (
                 <a className="nav-bar__item nav-bar__item--dropdown">Services</a>            
                 <Link href="/contact">
                     <a className="nav-bar__item">Contact Us</a>            
+                </Link>
+                <Link href="/faq">
+                    <a className="nav-bar__item">FAQ</a>            
                 </Link>                                
         </div>
         <style jsx>{`

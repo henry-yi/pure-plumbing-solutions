@@ -12,6 +12,15 @@ const Layout = (props) => (
         <Header />
         { props.children }
         <Footer />
+        <style jsx global>{`
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                margin: 0px;
+            }
+        `}</style>
     </div>
 )
 

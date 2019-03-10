@@ -4,7 +4,7 @@ import BusinessPoint from './BusinessPoint';
 
 const SubPage = (props) => (
     <Layout>
-        <Banner title={props.title} />
+        <Banner title={props.title} items={props.items ? props.items : []}/>
         {props.children}
     </Layout>
 )
