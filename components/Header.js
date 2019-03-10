@@ -4,7 +4,26 @@ const Header = () => (
     <div className="header">
         <div className="header__logo-bar">
             <div className="header__logo"></div>
-            <div className="header__phone">(408) 891-0720</div>
+            <div className="header__right">
+                <div className="header__righttop">
+                    <div className="header__24">24 hour service</div>
+                    <div className="header__phone">(408) 891-0720</div>
+                </div>
+                <div className="social_media_block">
+                    <a className="header__mobile__phone" href="tel:4088910720">
+                        <i className="fas fa-phone"></i>
+                    </a>
+                    <a className="social_media_icon" href="#">
+                        <i className="fab fa-facebook-f"></i>
+                    </a>
+                    <a className="social_media_icon" href="#">
+                        <i className="fab fa-instagram"></i>
+                    </a>
+                    <a className="social_media_icon" href="https://www.yelp.com/biz/pure-plumbing-solutions-los-gatos">
+                        <i className="fab fa-yelp"></i>
+                    </a>
+                </div>
+            </div>
         </div>
         <div className="header__nav-bar">
                 <Link href="/">
@@ -31,7 +50,7 @@ const Header = () => (
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                height: 48px;
+                height: 58px;
                 background: #000000;
             }
 
@@ -44,7 +63,7 @@ const Header = () => (
                 background-repeat: no-repeat;
             }
 
-            .header__phone {
+            /* .header__phone {
                 margin-right: 12px;
                 height: 48px;
                 color: #FFFFFF;	
@@ -52,6 +71,31 @@ const Header = () => (
                 font-size: 16px;	
                 font-weight: 500;	
                 line-height: 48px;
+            } */
+
+            .header__24 {
+                color: #FFFFFF;
+                font-family: "Avenir Next";
+                text-align: center;
+                margin-top: 5px;
+                font-size: 17px;
+            }
+
+            .social_media_block {
+                text-align: right;
+                margin-right: 12px;
+            }
+
+            .fab, .fas {
+                margin: 10px;
+                -webkit-transition: all 0.5s;
+                transition: all 0.5s;
+                color: #777;
+                font-size: 20px;
+            }
+
+            .header__phone {
+                display: none;
             }
 
             .header__nav-bar {
@@ -62,6 +106,7 @@ const Header = () => (
                 width: 100%;
                 background-color: #212222;
             }
+            
             .nav-bar__item {
                 text-decoration: none;
                 margin: 0 8px;
@@ -104,6 +149,21 @@ const Header = () => (
                 background-repeat: no-repeat;
             }
 
+            .header__right {
+                width: 380px;
+            }
+
+            .header__righttop {                
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .header__24 {
+                color: #FFFFFF;
+                font-size: 22px;
+            }
+
             .header__phone {
                 margin-right: 60px;
                 height: 48px;
@@ -112,6 +172,27 @@ const Header = () => (
                 font-size: 24px;	
                 font-weight: 500;	
                 line-height: 48px;
+            }
+
+            .header__mobile__phone {
+                display: none;
+            }
+
+            .social_media_block {
+                text-align: right;
+                margin-right: 60px;
+            }
+
+            .fab {
+                margin: 10px;
+                -webkit-transition: all 0.5s;
+                transition: all 0.5s;
+                color: #777;
+                font-size: 30px;
+            }
+
+            .fab:hover {
+                color: #2E69A5;
             }
 
             .header__nav-bar {
@@ -164,6 +245,21 @@ const Header = () => (
                 background-repeat: no-repeat;
             }
 
+            .header__right {
+                width: 380px;
+            }
+
+            .header__righttop {                
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .header__24 {
+                color: #FFFFFF;
+                font-size: 22px;
+            }
+
             .header__phone {
                 margin-right: 112px;
                 height: 48px;
@@ -172,6 +268,27 @@ const Header = () => (
                 font-size: 24px;	
                 font-weight: 500;	
                 line-height: 48px;
+            }
+
+            .header__mobile__phone {
+                display: none;
+            }
+
+            .social_media_block {
+                text-align: right;
+                margin-right: 60px;
+            }
+
+            .fab {
+                margin: 10px;
+                -webkit-transition: all 0.5s;
+                transition: all 0.5s;
+                color: #777;
+                font-size: 30px;
+            }
+
+            .fab:hover {
+                color: #2E69A5;
             }
 
             .header__nav-bar {
