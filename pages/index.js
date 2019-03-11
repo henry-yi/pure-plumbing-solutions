@@ -1,12 +1,15 @@
 import Layout from '../components/Layout';
 import HowCanWeHelpCard from '../components/HowCanWeHelpCard';
 import BusinessPoint from '../components/BusinessPoint';
+import Link from 'next/link';
 
 const Index = () => (
     <Layout>
         <div className="jumbotron">
             <div className="cta-text">Pure Honesty, Solutions, and Satisfaction</div>
-            <button className="cta-button">Call to Action</button>
+            <Link href="/contact">
+                <button className="cta-button">Click Here to Contact Us Now</button>
+            </Link>
         </div>
         <div className="helpCards">
             <HowCanWeHelpCard destination="waterheater" ico="fire" title="Water Heater" items={["Installation","Repairs","Routine Maintenance","Products"]}/>
