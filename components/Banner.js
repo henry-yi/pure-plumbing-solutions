@@ -4,7 +4,7 @@ const Banner = (props) => (
             <div className="banner-text">{props.title}</div>
             <div className="banner__nav-bar">{
                 props.items.map((item, index) => (
-                    <a className="banner__item" href={`#${item}`}>{item}</a> 
+                    <a className="banner__item" href={`#${item.id}`}>{item.title}</a> 
                 ))}                                       
             </div>
         </div>
