@@ -246,7 +246,7 @@ const Header = () => (
             }
 
             .header__right {
-                width: 380px;
+                width: 440px;
             }
 
             .header__righttop {                
