@@ -15,18 +15,29 @@ const HowCanWeHelpCard = (props) => (
                 </div>
             </div>
             <style jsx>{`
+            .cardContainer {
+                background-color: #FFFFFF;
+                -webkit-transition: all 1s;
+                transition: all 1s;    
+            }
+
+            .cardContent {
+                margin: 30px 0;
+                text-align: center;
+            }
+
+            .cardText {
+                margin: 0 7px;
+            }
+
+            .cardText div {
+                margin: 12px 0;
+            }
+
             @media (min-width: 320px) and (max-width: 1023px) {
                 .cardContainer {
                     width: 310px;
-                    background-color: #FFFFFF;
-                    -webkit-transition: all 1s;
-                    transition: all 1s;
                     border-bottom: 1px solid black;
-                }
-
-                .cardContent {
-                    margin: 30px 0;
-                    text-align: center;
                 }
 
                 .helpCardIco {
@@ -40,11 +51,6 @@ const HowCanWeHelpCard = (props) => (
 
                 .cardText {
                     font-size: 17px;
-                    margin: 0 7px;
-                }
-
-                .cardText div {
-                    margin: 12px 0;
                 }
             }
 
@@ -52,18 +58,10 @@ const HowCanWeHelpCard = (props) => (
                 .cardContainer {
                     width: 320px;
                     height: 356px;
-                    background-color: #FFFFFF;
-                    -webkit-transition: all 1s;
-                    transition: all 1s;
                 }
 
                 .cardContainer:hover {
                     background-color: #2E69A5;
-                }
-
-                .cardContent {
-                    margin: 30px 0;
-                    text-align: center;
                 }
 
                 .helpCardIco {
@@ -77,11 +75,6 @@ const HowCanWeHelpCard = (props) => (
 
                 .cardText {
                     font-size: 17px;
-                    margin: 0 7px;
-                }
-
-                .cardText div {
-                    margin: 12px 0;
                 }
             }
 
@@ -89,18 +82,10 @@ const HowCanWeHelpCard = (props) => (
                 .cardContainer {
                     width: 320px;
                     height: 360px;
-                    background-color: #FFFFFF;
-                    -webkit-transition: all 1s;
-                    transition: all 1s;
                 }
 
                 .cardContainer:hover {
                     background-color: #2E69A5;
-                }
-
-                .cardContent {
-                    margin: 30px 0;
-                    text-align: center;
                 }
 
                 .helpCardIco {
@@ -112,12 +97,7 @@ const HowCanWeHelpCard = (props) => (
                 }
 
                 .cardText {
-                    margin: 0 7px;
                     font-size: 18px;
-                }
-
-                .cardText div {
-                    margin: 12px 0;
                 }
             }
             `}</style>

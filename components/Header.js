@@ -41,40 +41,79 @@ const Header = () => (
                 </Link>                                
         </div>
         <style jsx>{`
-        @media (min-width: 320px) and (max-width: 1023px) {
-            .header {
-                width: 100%;
-            }
+        .header {
+            width: 100%;
+        }
 
+        .header__logo-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #000000;
+        }
+
+        .header__logo {
+            background-image: url("/static/logo.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .header__24 {
+            color: #FFFFFF;
+        }
+
+        .social_media_block {
+            text-align: right;
+        }
+
+        .fab, .fas {
+            margin: 10px;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            color: #777;
+        }
+
+        .header__phone {
+            height: 48px;
+            color: #FFFFFF;	
+            font-family: "Avenir Next";	
+            font-size: 24px;	
+            font-weight: 500;	
+            line-height: 48px;
+        }
+
+        .header__nav-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: #212222;
+        }
+
+        .nav-bar__item {
+            text-decoration: none;
+            color: #ffffff;
+            font-family: "Aveni Next";
+            font-weight: 500;
+            line-height: 48px;
+        }
+
+        .nav-bar__item--dropdown {
+            cursor: pointer; 
+        }
+
+        @media (min-width: 320px) and (max-width: 1023px) {
             .header__logo-bar {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
                 height: 58px;
-                background: #000000;
             }
 
             .header__logo {
                 margin-left: 12px;
                 height: 24px;
                 width: 90px;
-                background-image: url("/static/logo.png");
-                background-size: contain;
-                background-repeat: no-repeat;
             }
 
-            /* .header__phone {
-                margin-right: 12px;
-                height: 48px;
-                color: #FFFFFF;	
-                font-family: "Avenir Next";	
-                font-size: 16px;	
-                font-weight: 500;	
-                line-height: 48px;
-            } */
-
             .header__24 {
-                color: #FFFFFF;
                 font-family: "Avenir Next";
                 text-align: center;
                 margin-top: 5px;
@@ -82,15 +121,10 @@ const Header = () => (
             }
 
             .social_media_block {
-                text-align: right;
                 margin-right: 12px;
             }
 
             .fab, .fas {
-                margin: 10px;
-                -webkit-transition: all 0.5s;
-                transition: all 0.5s;
-                color: #777;
                 font-size: 20px;
             }
 
@@ -99,54 +133,24 @@ const Header = () => (
             }
 
             .header__nav-bar {
-                display: flex;
-                align-items: center;
-                justify-content: center; 
                 height: 48px;
-                width: 100%;
-                background-color: #212222;
             }
             
             .nav-bar__item {
-                text-decoration: none;
                 margin: 0 8px;
-                color: #ffffff;
-                font-family: "Aveni Next";
                 font-size: 16px;
-                font-weight: 500;
-                line-height: 48px;
-            }
-
-            .nav-bar__item:hover {
-                color: #2E69A5;
-                transition: 0.3s;
-            }
-
-            .nav-bar__item--dropdown {
-                cursor: pointer; 
             }
         }
 
         @media (min-width: 1024px) {
-            .header {
-                width: 100%;
-            }
-
             .header__logo-bar {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
                 height: 103px;
-                background: #000000;
             }
 
             .header__logo {
                 margin-left: 60px;
                 height: 48px;
                 width: 180px;
-                background-image: url("/static/logo.png");
-                background-size: contain;
-                background-repeat: no-repeat;
             }
 
             .header__right {
@@ -160,18 +164,11 @@ const Header = () => (
             }
 
             .header__24 {
-                color: #FFFFFF;
                 font-size: 22px;
             }
 
             .header__phone {
                 margin-right: 60px;
-                height: 48px;
-                color: #FFFFFF;	
-                font-family: "Avenir Next";	
-                font-size: 24px;	
-                font-weight: 500;	
-                line-height: 48px;
             }
 
             .header__mobile__phone {
@@ -179,15 +176,10 @@ const Header = () => (
             }
 
             .social_media_block {
-                text-align: right;
                 margin-right: 60px;
             }
 
             .fab {
-                margin: 10px;
-                -webkit-transition: all 0.5s;
-                transition: all 0.5s;
-                color: #777;
                 font-size: 30px;
             }
 
@@ -196,53 +188,28 @@ const Header = () => (
             }
 
             .header__nav-bar {
-                display: flex;
-                align-items: center;
-                justify-content: center; 
                 height: 77px;
-                width: 100%;
-                background-color: #212222;
             }
             .nav-bar__item {
-                text-decoration: none;
                 margin: 0 30px;
-                color: #ffffff;
-                font-family: "Aveni Next";
                 font-size: 24px;
-                font-weight: 500;
-                line-height: 48px;
             }
 
             .nav-bar__item:hover {
                 color: #2E69A5;
                 transition: 0.3s;
             }
-
-            .nav-bar__item--dropdown {
-                cursor: pointer; 
-            }
         }
         
         @media (min-width: 1440px) {
-            .header {
-                width: 100%;
-            }
-
             .header__logo-bar {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
                 height: 103px;
-                background: #000000;
             }
 
             .header__logo {
                 margin-left: 112px;
                 height: 48px;
                 width: 180px;
-                background-image: url("/static/logo.png");
-                background-size: contain;
-                background-repeat: no-repeat;
             }
 
             .header__right {
@@ -256,18 +223,11 @@ const Header = () => (
             }
 
             .header__24 {
-                color: #FFFFFF;
                 font-size: 22px;
             }
 
             .header__phone {
                 margin-right: 112px;
-                height: 48px;
-                color: #FFFFFF;	
-                font-family: "Avenir Next";	
-                font-size: 24px;	
-                font-weight: 500;	
-                line-height: 48px;
             }
 
             .header__mobile__phone {
@@ -275,15 +235,10 @@ const Header = () => (
             }
 
             .social_media_block {
-                text-align: right;
                 margin-right: 60px;
             }
 
             .fab {
-                margin: 10px;
-                -webkit-transition: all 0.5s;
-                transition: all 0.5s;
-                color: #777;
                 font-size: 30px;
             }
 
@@ -292,30 +247,17 @@ const Header = () => (
             }
 
             .header__nav-bar {
-                display: flex;
-                align-items: center;
-                justify-content: center; 
                 height: 77px;
-                width: 100%;
-                background-color: #212222;
             }
+
             .nav-bar__item {
-                text-decoration: none;
                 margin: 0 30px;
-                color: #ffffff;
-                font-family: "Aveni Next";
                 font-size: 24px;
-                font-weight: 500;
-                line-height: 48px;
             }
 
             .nav-bar__item:hover {
                 color: #2E69A5;
                 transition: 0.3s;
-            }
-
-            .nav-bar__item--dropdown {
-                cursor: pointer; 
             }
         }
         `}</style>
