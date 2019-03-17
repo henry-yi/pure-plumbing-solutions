@@ -138,7 +138,7 @@ const Header = () => (
             
             .nav-bar__item {
                 margin: 0 8px;
-                font-size: 16px;
+                font-size: 14px;
             }
         }
 
