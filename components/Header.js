@@ -235,7 +235,7 @@ const Header = () => (
             }
 
             .social_media_block {
-                margin-right: 60px;
+                margin-right: 112px;
             }
 
             .fab {
