@@ -17,41 +17,47 @@ const PlumbingFixtures = () => (
             </div>
         </div>
         <style jsx>{`
-        @media (min-width: 320px) and (max-width: 1023px) {
-            .bPRow {
-                margin: 20px 13px;
+            @media (min-width: 320px) and (max-width: 1023px) {
+                .bPContainer {
+                    padding-bottom: 0px;
+                }
+                
+                .bPRow {
+                    margin: 20px 13px;
+                }
             }
-        }
-
-        @media (min-width: 1024px) {
+            
+            @media (min-width: 1024px) {
+                .bPContainer {
+                    padding-bottom: 40px;
+                }
+                
+                .bPRow {
+                    margin: 0 60px;
+                    margin-top: 40px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                }
+            }
+            
+            @media (min-width: 1440px) {
+                .bPContainer {
+                    padding-bottom: 60px;
+                }
+                
+                .bPRow {
+                    margin: 0 112px;
+                    margin-top: 30px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                }
+            }
+            
             .bPContainer {
-                padding-bottom: 40px;
                 width: 100%;
             }
-
-            .bPRow {
-                margin: 0 60px;
-                margin-top: 40px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-            }
-        }
-
-        @media (min-width: 1440px) {
-            .bPContainer {
-                padding-bottom: 60px;
-                width: 100%;
-            }
-
-            .bPRow {
-                margin: 0 112px;
-                margin-top: 30px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-            }            
-        }
         `}</style>
     </SubPage>
 )

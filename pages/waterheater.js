@@ -56,68 +56,69 @@ const WaterHeater = () => (
             </div>            
         </div>                        
         <style jsx>{`
-        @media (min-width: 320px) and (max-width: 1023px) {
-            .bPRow {
-                margin: 0px 13px;
+            @media (min-width: 320px) and (max-width: 1023px) {
+                .bPContainer {
+                    padding-bottom: 0px;
+                }
+                
+                .bPRow {
+                    margin: 0px 13px;
+                }
+                
+                .section-title {
+                    margin-left: 12px;
+                }
             }
-
-            .section-title {
-                margin-left: 12px;
-                padding-top: 40px;
-                color: #000000;
-                font-family: "Avenir Next";
-                font-size: 35px;
-                font-weight: 500;
+            
+            
+            @media (min-width: 1024px) {
+                .bPContainer {
+                    padding-bottom: 40px;
+                }
+                
+                .bPRow {
+                    margin: 0 60px;
+                    margin-top: 40px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                }
+                
+                .section-title {
+                    margin-left: 60px;
+                }
             }
-        }
-
-        @media (min-width: 1024px) {
-            .bPContainer {
-                padding-bottom: 40px;
-                width: 100%;
+            
+            @media (min-width: 1440px) {
+                .bPContainer {
+                    padding-bottom: 60px;
+                }
+                
+                .bPRow {
+                    margin: 0 112px;
+                    margin-top: 30px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                }
+                
+                .section-title {
+                    margin-left: 112px;
+                }
             }
-
-            .bPRow {
-                margin: 0 60px;
-                margin-top: 40px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-            }
-
-            .section-title {
-                margin-left: 60px;
-                padding-top: 40px;
-                color: #000000;
-                font-family: "Avenir Next";
-                font-size: 35px;
-                font-weight: 500;
-            }
-        }
-
-        @media (min-width: 1440px) {
+            
             .bPContainer {
                 padding-bottom: 60px;
                 width: 100%;
             }
-
-            .bPRow {
-                margin: 0 112px;
-                margin-top: 30px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-            }
             
             .section-title {
-                margin-left: 112px;
                 padding-top: 40px;
                 color: #000000;
                 font-family: "Avenir Next";
                 font-size: 35px;
                 font-weight: 500;
             }
-        }
         `}</style>
     </SubPage>
 )

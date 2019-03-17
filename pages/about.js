@@ -15,96 +15,85 @@ const About = () => (
         </div>
         <style jsx>{`
             @media (min-width: 320px) and (max-width: 1023px) {
-                .about-container {
-                    display: flex;
-                }
-
                 .key-point {
                     margin-left: 12px;
                     margin-right: 14px;
-                    width: 50%;
                 }
 
                 .key-description {
                     margin-right: 12px;
                     margin-left: 14px;
-                    width: 50%;
                 }
 
                 .key-description p {
-                    font-family: "Avenir Next";
                     font-size: 18px;
-                    line-height: 24px;                    
                 }
 
                 .key-point p {
-                    font-family: "Avenir Next";
-                    font-size: 18px;
-                    font-weight: 500;
-                    line-height: 24px;                    
+                    font-size: 18px;               
                 }
             }
 
             @media (min-width: 1024px) {
-                .about-container {
-                    display: flex;
-                }
-
                 .key-point {
                     margin-left: 60px;
                     margin-right: 20px;
-                    width: 50%;
                 }
 
                 .key-description {
                     margin-right: 60px;
                     margin-left: 20px;
-                    width: 50%;
                 }
 
                 .key-description p {
-                    font-family: "Avenir Next";
                     font-size: 20px;
-                    line-height: 24px;                    
                 }
 
                 .key-point p {
-                    font-family: "Avenir Next";
-                    font-size: 20px;
-                    font-weight: 500;
-                    line-height: 24px;                    
+                    font-size: 20px;               
                 }
             }
 
             @media (min-width: 1440px) {
-                .about-container {
-                    display: flex;
-                }
-
                 .key-point {
                     margin-left: 112px;
                     margin-right: 28px;
-                    width: 50%;
                 }
 
                 .key-description {
                     margin-right: 112px;
                     margin-left: 28px;
-                    width: 50%;
                 }
 
                 .key-description p {
-                    font-family: "Avenir Next";
                     font-size: 24px;
-                    line-height: 24px;                    
                 }
 
                 .key-point p {
-                    font-family: "Avenir Next";
-                    font-size: 24px;
-                    font-weight: 500;
-                    line-height: 24px;                    
+                    font-size: 24px;               
                 }
+            }
+            .about-container {
+                display: flex;
+            }
+
+            .key-point {
+                width: 50%;
+            }
+
+            .key-description {
+                width: 50%;
+            }
+
+            .key-description p {
+                font-family: "Avenir Next";
+                line-height: 24px;                    
+            }
+
+            .key-point p {
+                font-family: "Avenir Next";
+                font-weight: 500;
+                line-height: 24px;                    
             }
         `}</style>
     </Layout>
