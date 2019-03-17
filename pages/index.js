@@ -8,7 +8,7 @@ const Index = () => (
         <div className="jumbotron">
             <div className="cta-text">Pure Honesty, Solutions, and Satisfaction</div>
             <Link href="/contact">
-                <button className="cta-button">Click Here to Contact Us Now</button>
+                <button className="cta-button">Contact Us Now</button>
             </Link>
         </div>
         <div className="helpCards">
@@ -222,6 +222,7 @@ const Index = () => (
             }
 
             .cta-button {
+                cursor: pointer;
                 height: 75px;
                 background-color: #2E69A5;
                 color: #FFFFFF;
@@ -233,6 +234,7 @@ const Index = () => (
             }
 
             .helpCards {
+                cursor: pointer;
                 display: flex;
                 justify-content: center;
             }
@@ -256,7 +258,7 @@ const Index = () => (
             .business-points__bullets {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
+                justify-content: space-around;
             }
 
             .callUs {
