@@ -37,29 +37,192 @@ const Index = () => (
             </div>
         </div>
         <style jsx>{`
-        @media (min-width: 320px) and (max-width: 1023px) {
+            @media (min-width: 320px) and (max-width: 1023px) {
+                .jumbotron {
+                    height: 430px;
+                }
+
+                .cta-text {
+                    text-align: center;
+                }
+
+                .cta-button {
+                    margin: 25px auto;
+                    width: 240px;
+                }
+
+                .helpCards {
+                    flex-wrap: wrap;
+                    margin: 0 10px;
+                }
+
+                .helpCardTitle {
+                    font-size: 27px;
+                    text-align: center;
+                }
+
+                .business-points {
+                    padding-bottom: 40px;
+                }
+
+                .business-point__title {
+                    text-align: center;
+                    padding-top: 20px;
+                    margin-bottom: 20px;
+                    font-size: 24px;
+                }
+
+                .business-points__bullets {
+                    margin: 0 16px;
+                    margin-top: 0px;
+                }
+
+                .callUs {
+                    margin-top: -1px;
+                    height: 96px;
+                    flex-wrap: wrap;
+                    font-size: 24px;
+                    line-height: 48px;     
+                }
+
+                .callUs .callUsText {
+                    text-align: center;
+                    width: 100%;
+                    height: 8px;
+                }
+
+                .callUs .callUsPhone {
+                    margin-bottom: 10px;
+                    height: 38px;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+
+            @media (min-width: 1024px) {
+                .jumbotron {
+                    height: 430px;
+                }
+
+                .cta-text {
+                    margin-left: 60px;
+                    margin-bottom: 22px;
+                }
+
+                .cta-button {
+                    margin-top: 22px;
+                    margin-left: 60px;	
+                    width: 319px;
+                }
+
+                .helpCards {
+                    margin: 0 60px;
+                }
+
+                .helpCardTitle {
+                    font-size: 27px;
+                    text-align: center;
+                }
+
+                .business-points {
+                    padding-bottom: 40px;
+                }
+
+                .business-point__title {
+                    margin-left: 60px;
+                    padding-top: 40px;
+                    font-size: 30px;
+                }
+
+                .business-points__bullets {
+                    margin: 0 60px;
+                    margin-top: 40px;
+                }
+
+                .callUs {
+                    height: 128px;
+                    font-size: 30px;
+                }
+
+                .callUs .callUsText {
+                    margin-right: 7px;
+                }
+
+                .callUs .callUsPhone {
+                    margin-left: 7px;
+                }
+            }
+
+            @media (min-width: 1440px) {
+                .jumbotron {
+                    height: 690px;
+                }
+
+                .cta-text {
+                    margin-left: 112px;
+                    margin-bottom: 22px;
+                }
+
+                .cta-button {
+                    margin-top: 22px;
+                    margin-left: 112px;	
+                    width: 319px;
+                }
+
+                .helpCards {
+                    margin: 0 112px;
+                }
+
+                .helpCardTitle {
+                    font-size: 35px;
+                    text-align: left;
+                }
+
+                .business-points {
+                    padding-bottom: 60px;
+                }
+
+                .business-point__title {
+                    margin-left: 112px;
+                    padding-top: 40px;
+                    font-size: 35px;
+                }
+
+                .business-points__bullets {
+                    margin: 0 60px;
+                    margin-top: 40px;
+                }
+
+                .callUs {
+                    height: 128px;
+                    font-size: 30px;   
+                }
+
+                .callUs .callUsText {
+                    margin-right: 7px;
+                }
+
+                .callUs .callUsPhone {
+                    margin-left: 7px;
+                }
+            }
+
             .jumbotron {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 width: 100%;
-                height: 430px;
                 background-color: #D8D8D8;
             }
 
             .cta-text {
-                text-align: center;
-                color: #FFFFFF;	
-                font-family: "Avenir Next";	
                 font-size: 35px;	
                 font-weight: 500;	
                 line-height: 48px;
             }
 
             .cta-button {
-                margin: 25px auto;
-                height: 75px;	
-                width: 240px;	
+                height: 75px;
                 background-color: #2E69A5;
                 color: #FFFFFF;
                 font-family: "Avenir Next";
@@ -72,136 +235,25 @@ const Index = () => (
             .helpCards {
                 display: flex;
                 justify-content: center;
-                flex-wrap: wrap;
-                margin: 0 10px;
             }
 
             .helpCardTitle {
-                font-size: 27px;
-                text-align: center;
                 margin-top: 40px;
                 font-weight: bold;
             }
 
             .business-points {
-                padding-bottom: 40px;
                 width: 100%;
                 background-color: #D8D8D8;
             }
 
             .business-point__title {
-                text-align: center;
-                padding-top: 20px;
-                margin-bottom: 20px;
                 color: #000000;
                 font-family: "Avenir Next";
-                font-size: 24px;
                 font-weight: 500;
             }
 
             .business-points__bullets {
-                margin: 0 16px;
-                margin-top: 0px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .callUs {
-                margin-top: -1px;
-                display: flex;
-                justify-content: center;
-                background-color: black;
-                height: 96px;
-                font-size: 24px;
-                color: #FFFFFF;
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                align-items: center;
-                line-height: 48px;
-            }
-
-            .callUs .callUsText {
-                text-align: center;
-                width: 100%;
-                height: 8px;
-            }            
-
-            .callUs .callUsPhone {
-                margin-bottom: 10px;
-                height: 38px;
-                text-align: center;
-                width: 100%;
-                color: #2E69A5;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .jumbotron {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                width: 100%;
-                height: 430px;
-                background-color: #D8D8D8;
-            }
-
-            .cta-text {
-                margin-left: 60px;
-                margin-bottom: 22px;
-                color: #FFFFFF;	
-                font-family: "Avenir Next";	
-                font-size: 35px;	
-                font-weight: 500;	
-                line-height: 48px;
-            }
-
-            .cta-button {
-                margin-top: 22px;
-                margin-left: 60px;	
-                height: 75px;	
-                width: 319px;	
-                background-color: #2E69A5;
-                color: #FFFFFF;
-                font-family: "Avenir Next";
-                font-size: 24px;
-                font-weight: 500;
-                line-height: 48px;
-                text-align: center;
-            }
-
-            .helpCards {
-                display: flex;
-                justify-content: center;
-                margin: 0 60px;
-            }
-
-            .helpCardTitle {
-                font-size: 27px;
-                text-align: center;
-                margin-top: 40px;
-                font-weight: bold;
-            }
-
-            .business-points {
-                padding-bottom: 40px;
-                width: 100%;
-                background-color: #D8D8D8;
-            }
-
-            .business-point__title {
-                margin-left: 60px;
-                padding-top: 40px;
-                color: #000000;
-                font-family: "Avenir Next";
-                font-size: 30px;
-                font-weight: 500;
-            }
-
-            .business-points__bullets {
-                margin: 0 60px;
-                margin-top: 40px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
@@ -209,113 +261,15 @@ const Index = () => (
 
             .callUs {
                 background-color: black;
-                height: 128px;
-                font-size: 30px;
                 color: #FFFFFF;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-            }
-
-            .callUs .callUsText {
-                margin-right: 7px;
-            }
+            }          
 
             .callUs .callUsPhone {
-                margin-left: 7px;
                 color: #2E69A5;
-            }
-        }
-
-        @media (min-width: 1440px) {
-            .jumbotron {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                width: 100%;
-                height: 690px;
-                background-color: #D8D8D8;
-            }
-
-            .cta-text {
-                margin-left: 112px;
-                margin-bottom: 22px;
-                color: #FFFFFF;	
-                font-family: "Avenir Next";	
-                font-size: 35px;	
-                font-weight: 500;	
-                line-height: 48px;
-            }
-
-            .cta-button {
-                margin-top: 22px;
-                margin-left: 112px;	
-                height: 75px;	
-                width: 319px;	
-                background-color: #2E69A5;
-                color: #FFFFFF;
-                font-family: "Avenir Next";
-                font-size: 24px;
-                font-weight: 500;
-                line-height: 48px;
-                text-align: center;
-            }
-
-            .helpCards {
-                display: flex;
-                justify-content: center;
-                margin: 0 112px;
-            }
-
-            .helpCardTitle {
-                font-size: 35px;
-                text-align: left;
-                margin-top: 40px;
-                font-weight: bold;
-            }
-
-            .business-points {
-                padding-bottom: 60px;
-                width: 100%;
-                background-color: #D8D8D8;
-            }
-
-            .business-point__title {
-                margin-left: 112px;
-                padding-top: 40px;
-                color: #000000;
-                font-family: "Avenir Next";
-                font-size: 35px;
-                font-weight: 500;
-            }
-
-            .business-points__bullets {
-                margin: 0 112px;
-                margin-top: 30px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .callUs {
-                background-color: black;
-                height: 128px;
-                font-size: 30px;
-                color: #FFFFFF;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .callUs .callUsText {
-                margin-right: 7px;
-            }
-
-            .callUs .callUsPhone {
-                margin-left: 7px;
-                color: #2E69A5;
-            }
-        }        
+            }                
         `}</style>
     </Layout>
 )

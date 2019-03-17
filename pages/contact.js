@@ -13,40 +13,40 @@ const Contact = () => (
             </form>
         </div>
         <style jsx>{`
-        .email__form_container {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+            .email__form_container {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
 
-        .email__welcome {
-            font-size: 24px;
-            width: 100%;
-            text-align: center;
-            margin-top: 10px;
-        }
+            .email__welcome {
+                font-size: 24px;
+                width: 100%;
+                text-align: center;
+                margin-top: 10px;
+            }
 
-        .email__form {
-            width: 40%;
-        }
+            .email__form {
+                width: 40%;
+            }
 
-        .email__form input,
-        .email__form textarea
-         {
-            width: 100%;
-            margin-top: 5px;
-            font-size: 16px;
-        }
+            .email__form input,
+            .email__form textarea
+            {
+                width: 100%;
+                margin-top: 5px;
+                font-size: 16px;
+            }
 
-        .email__form textarea {
-            height: 200px;
-        }
+            .email__form textarea {
+                height: 200px;
+            }
 
-        .email__form button {
-            margin-bottom: 10px;
-        }
+            .email__form button {
+                margin-bottom: 10px;
+            }
         `}
         </style>
     </Layout>
