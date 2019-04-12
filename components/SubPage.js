@@ -3,7 +3,7 @@ import Banner from './Banner';
 
 const SubPage = (props) => (
     <Layout>
-        <Banner title={props.title} items={props.items ? props.items : []}/>
+        <Banner title={props.title} subtext={props.subtext} items={props.items ? props.items : []}/>
         {props.children}
     </Layout>
 )

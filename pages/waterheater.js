@@ -4,6 +4,7 @@ import BusinessPoint from '../components/BusinessPoint';
 const WaterHeater = () => (
    <SubPage 
     title="Water Heater"
+    subtext="Water heaters can be expensive, but with proper installation and yearly maintenance, you can rest assured that your water heater will last its full life expectancy with little to no issues."
     bannerImg=""
     items={
         [
@@ -69,7 +70,6 @@ const WaterHeater = () => (
                     margin-left: 12px;
                 }
             }
-            
             
             @media (min-width: 1024px) {
                 .bPContainer {

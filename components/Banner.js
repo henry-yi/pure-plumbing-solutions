@@ -2,6 +2,7 @@ const Banner = (props) => (
     <div>
         <div className="banner-image">
             <div className="banner-text">{props.title}</div>
+            <div className="banner-subtext">{props.subtext}</div>
             <div className="banner__nav-bar">{
                 props.items.map((item, index) => (
                     <a className="banner__item" href={`#${item.id}`}>{item.title}</a> 
@@ -24,6 +25,12 @@ const Banner = (props) => (
                 font-weight: 500;
             }
 
+            .banner-subtext {
+                width: 100%;
+                color: #FFFFFF;
+                font-family: "Avenir Next";
+            }
+
             .banner__nav-bar {
                 display: flex;
                 align-items: center;
@@ -41,7 +48,7 @@ const Banner = (props) => (
 
             @media (min-width: 320px) and (max-width: 1023px) {
                 .banner-image {
-                    height: 96px;
+                    height: 290px;
                 }
 
                 .banner-text {
@@ -49,6 +56,13 @@ const Banner = (props) => (
                     margin-left: 12px;
                     font-size: 24px;	
                     line-height: 24px;                    
+                }
+
+                .banner-subtext {
+                    margin-top: 12px;
+                    margin-left: 12px;
+                    margin-right: 12px;
+                    font-size: 18px;
                 }
 
                 .banner__nav-bar {
@@ -64,7 +78,7 @@ const Banner = (props) => (
 
             @media (min-width: 1024px) {
                 .banner-image {
-                    height: 180px;
+                    height: 300px;
                 }
 
                 .banner-text {
@@ -72,6 +86,13 @@ const Banner = (props) => (
                     margin-left: 60px;
                     font-size: 30px;	
                     line-height: 48px;                    
+                }
+                
+                .banner-subtext {
+                    margin-top: 24px;
+                    margin-left: 60px;
+                    margin-right: 60px;
+                    font-size: 24px;
                 }
 
                 .banner__nav-bar {
@@ -93,7 +114,7 @@ const Banner = (props) => (
 
             @media (min-width: 1440px) {
                 .banner-image {
-                    height: 180px;
+                    height: 340px;
                 }
 
                 .banner-text {
@@ -101,6 +122,13 @@ const Banner = (props) => (
                     margin-left: 112px;
                     font-size: 35px;	
                     line-height: 48px;                    
+                }
+
+                .banner-subtext {
+                    margin-top: 24px;
+                    margin-left: 112px;
+                    margin-right: 112px;
+                    font-size: 30px; 
                 }
 
                 .banner__nav-bar {
