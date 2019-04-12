@@ -2,18 +2,75 @@ import SubPage from '../components/SubPage';
 import BusinessPoint from '../components/BusinessPoint';
 
 const HomeImprovementPlan = () => (
-   <SubPage 
+    <SubPage 
     title="Home Improvement Plan"
     bannerImg=""
+    items={
+        [
+            { id: "waterheater", title: "Water Heater" }, 
+            { id: "drainandsewerlines", title: "Drain and Sewer Lines" },
+            { id: "plumbingfixtures", title: "Plumbing Fixtures"}
+        ]
+    }
     >
         <div className="bPContainer">
+            <div className="section-title" id="waterheater">Water Heater</div>
             <div className="bPRow">
-                <BusinessPoint source="subpage" title="Blocked Drain & Clogged Drains" description="There is nothing worse than a blocked drain affecting your house or business. We know the huge inconvenience and hassle it is when you have a blocked drain and our Perth plumbers are qualified and all carry the correct drainage equipment on-board with them to fix your plumbing problem as quickly as possible and unblock your drain." />
-                <BusinessPoint source="subpage" title="Drain Repair" description="Drains can crack or break from a number of different reasons causing huge plumbing problems. The cracked or broken drain can cause restricted flow and drain blockages. Our plumbers are trained to locate the obstruction or damage and repair it – ensuring your home is back up and running with minimal disruption." />
+                <BusinessPoint source="subpage" title="" description="Hard water deposits will invariably deteriorate the metals of a heat exchange or the inner chamber of a standard water heater. However, with proper maintenance, you can increase life expectancy and efficiency, which will ultimately save you money."/>
             </div>
             <div className="bPRow">
-                <BusinessPoint source="subpage" title="Blocked Toilets & Blocked Sinks" description="Is your toilet or sink unable to empty or clearing very slowly? Or is your sink making loud unusual sounds when draining? Your toilet blockage or sink blockage could be due to tree roots, foreign objects or fats. All our qualified Perth plumbers carry the necessary equipment to unblock your toilet or unblock your sinks, and can help you fix your blockage today." />
-                <BusinessPoint source="subpage" title="Drain Replacement" description="An older property comes with older drains, old clay drains (which are no longer used in modern plumbing) can crack and are susceptible to root invasion. Old galvanised steel drains can rust and leak or rust and block. Our plumbers are qualified to assess, upgrade and replace your drains." />
+                <BusinessPoint source="subpage" title="" description="Sediment flushing water heater or flushing/backflushing heat exchange(tankless)"/>
+                <BusinessPoint source="subpage" title="" description="Check water/gas supply lines for potential leaks"/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Pressure test for water traveling safely through your pipes"/>
+                <BusinessPoint source="subpage" title="" description="Safety check to ensure your safety from gas leaks, earthquake strapping"/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Anode rod assessment ensures your heating element isn’t destroyed by sediment in your tank."/>
+            </div>
+        </div>
+        <div className="bPContainer">
+            <div className="section-title" id="drainandsewerlines">Drain and Sewer Lines</div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Our expert plumbers can inspect and detect potential leaks or drain obstructions before they become expensive problems and leave you temporarily without water.  However, with proper maintenance, you can increase life expectancy and efficiency of your drains, which will ultimately save you money."/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Drain and sewer line back-up or blockage"/>
+                <BusinessPoint source="subpage" title="" description="Belly or low spot in the pipe and collapsed sewer lines"/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Broken or cracked pipes"/>
+                <BusinessPoint source="subpage" title="" description="Root intrusion damage"/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="New Construction Plumbing"/>
+                <BusinessPoint source="subpage" title="" description="Offset pipes"/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Property line clean out"/>
+                <BusinessPoint source="subpage" title="" description="Main Line Installation"/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Underfloor Drain Line Inspection"/>
+                <BusinessPoint source="subpage" title="" description="Drain Cleaning"/>
+            </div>
+        </div>
+        <div className="bPContainer">
+            <div className="section-title" id="plumbingfixtures">Plumbing Fixtures</div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="We provide a list of safety checks to ensure a potential leak is resolved before it can occur. Our list includes but not limited to the following"/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Water supply line quality"/>
+                <BusinessPoint source="subpage" title="" description="Water/drain line damage"/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Emergency shut off valves in working condition"/>
+                <BusinessPoint source="subpage" title="" description="Toilets checked for leaks"/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Under sink water spot inspection"/>
             </div>
         </div>
         <style jsx>{`
@@ -23,7 +80,11 @@ const HomeImprovementPlan = () => (
                 }
                 
                 .bPRow {
-                    margin: 20px 13px;
+                    margin: 0px 13px;
+                }
+                
+                .section-title {
+                    margin-left: 12px;
                 }
             }
             
@@ -37,7 +98,11 @@ const HomeImprovementPlan = () => (
                     margin-top: 40px;
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: space-around;
+                    justify-content: flex-start;
+                }
+                
+                .section-title {
+                    margin-left: 60px;
                 }
             }
             
@@ -51,12 +116,25 @@ const HomeImprovementPlan = () => (
                     margin-top: 30px;
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: space-around;
+                    justify-content: flex-start;
+                }
+                
+                .section-title {
+                    margin-left: 112px;
                 }
             }
             
             .bPContainer {
+                padding-bottom: 60px;
                 width: 100%;
+            }
+            
+            .section-title {
+                padding-top: 40px;
+                color: #000000;
+                font-family: "Avenir Next";
+                font-size: 35px;
+                font-weight: 500;
             }
         `}</style>
     </SubPage>

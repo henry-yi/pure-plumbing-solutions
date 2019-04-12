@@ -2,18 +2,38 @@ import SubPage from '../components/SubPage';
 import BusinessPoint from '../components/BusinessPoint';
 
 const Water = () => (
-   <SubPage 
+    <SubPage 
     title="Water"
     bannerImg=""
+    items={
+        [
+            { id: "installation", title:"Installation" }, 
+            { id: "repairs", title: "Repairs" }
+        ]
+    }
     >
         <div className="bPContainer">
+            <div className="section-title" id="installation">Installation</div>
             <div className="bPRow">
-                <BusinessPoint source="subpage" title="Blocked Drain & Clogged Drains" description="There is nothing worse than a blocked drain affecting your house or business. We know the huge inconvenience and hassle it is when you have a blocked drain and our Perth plumbers are qualified and all carry the correct drainage equipment on-board with them to fix your plumbing problem as quickly as possible and unblock your drain." />
-                <BusinessPoint source="subpage" title="Drain Repair" description="Drains can crack or break from a number of different reasons causing huge plumbing problems. The cracked or broken drain can cause restricted flow and drain blockages. Our plumbers are trained to locate the obstruction or damage and repair it – ensuring your home is back up and running with minimal disruption." />
+                <BusinessPoint source="subpage" title="" description="If your home is more than 20 years old, it’s highly possible you still have galvanized piping. Over time galvanized pipes can clog up water lines causing them to be inoperable. Replacing your home with copper piping will not only ensure better water pressure to your fixtures but will ultimately increase the value of your home. Additionally, there are a few installations that can make certain your water and pipe quality will remain at their highest life expectancy."/>
             </div>
             <div className="bPRow">
-                <BusinessPoint source="subpage" title="Blocked Toilets & Blocked Sinks" description="Is your toilet or sink unable to empty or clearing very slowly? Or is your sink making loud unusual sounds when draining? Your toilet blockage or sink blockage could be due to tree roots, foreign objects or fats. All our qualified Perth plumbers carry the necessary equipment to unblock your toilet or unblock your sinks, and can help you fix your blockage today." />
-                <BusinessPoint source="subpage" title="Drain Replacement" description="An older property comes with older drains, old clay drains (which are no longer used in modern plumbing) can crack and are susceptible to root invasion. Old galvanised steel drains can rust and leak or rust and block. Our plumbers are qualified to assess, upgrade and replace your drains." />
+                <BusinessPoint source="subpage" title="" description="Pressure reducing valve, for safe water travel"/>
+                <BusinessPoint source="subpage" title="" description="Emergency quarter turn mainline shut off valve"/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Water softener system, to reduce hard water deposits"/>
+                <BusinessPoint source="subpage" title="" description="Water hammer arrestor, to ensure pipes do not shake"/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Water line descaler, to reduce hard water deposits"/>
+                <BusinessPoint source="subpage" title="" description="Water purification system"/>
+            </div>
+        </div>
+        <div className="bPContainer">
+            <div className="section-title" id="repairs">Repairs</div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="There are numerous signs you want to watch out for that raise a red flag when a water repair may need to take place. If you notice pooling water in your front yard or an increase in your water bill, this is usually due to a leak either underground or in the crawl space of your home."/>
             </div>
         </div>
         <style jsx>{`
@@ -23,7 +43,11 @@ const Water = () => (
                 }
                 
                 .bPRow {
-                    margin: 20px 13px;
+                    margin: 0px 13px;
+                }
+                
+                .section-title {
+                    margin-left: 12px;
                 }
             }
             
@@ -37,7 +61,11 @@ const Water = () => (
                     margin-top: 40px;
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: space-around;
+                    justify-content: flex-start;
+                }
+                
+                .section-title {
+                    margin-left: 60px;
                 }
             }
             
@@ -51,12 +79,25 @@ const Water = () => (
                     margin-top: 30px;
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: space-around;
+                    justify-content: flex-start;
+                }
+                
+                .section-title {
+                    margin-left: 112px;
                 }
             }
             
             .bPContainer {
+                padding-bottom: 60px;
                 width: 100%;
+            }
+            
+            .section-title {
+                padding-top: 40px;
+                color: #000000;
+                font-family: "Avenir Next";
+                font-size: 35px;
+                font-weight: 500;
             }
         `}</style>
     </SubPage>
