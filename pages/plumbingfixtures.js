@@ -2,18 +2,63 @@ import SubPage from '../components/SubPage';
 import BusinessPoint from '../components/BusinessPoint';
 
 const PlumbingFixtures = () => (
-   <SubPage 
+    <SubPage 
     title="Plumbing Fixtures"
     bannerImg=""
+    items={
+        [
+            { id: "installation", title: "Installation" }, 
+            { id: "repairs", title: "Repairs" },
+            { id: "routinemaintenance", title: "Routine Maintenance"}
+        ]
+    }
     >
         <div className="bPContainer">
+            <div className="section-title" id="installation">Installation</div>
             <div className="bPRow">
-                <BusinessPoint source="subpage" title="Blocked Drain & Clogged Drains" description="There is nothing worse than a blocked drain affecting your house or business. We know the huge inconvenience and hassle it is when you have a blocked drain and our Perth plumbers are qualified and all carry the correct drainage equipment on-board with them to fix your plumbing problem as quickly as possible and unblock your drain." />
-                <BusinessPoint source="subpage" title="Drain Repair" description="Drains can crack or break from a number of different reasons causing huge plumbing problems. The cracked or broken drain can cause restricted flow and drain blockages. Our plumbers are trained to locate the obstruction or damage and repair it – ensuring your home is back up and running with minimal disruption." />
+                <BusinessPoint source="subpage" title="" description="Some examples of fixtures our professional plumbers can install include the following."/>
             </div>
             <div className="bPRow">
-                <BusinessPoint source="subpage" title="Blocked Toilets & Blocked Sinks" description="Is your toilet or sink unable to empty or clearing very slowly? Or is your sink making loud unusual sounds when draining? Your toilet blockage or sink blockage could be due to tree roots, foreign objects or fats. All our qualified Perth plumbers carry the necessary equipment to unblock your toilet or unblock your sinks, and can help you fix your blockage today." />
-                <BusinessPoint source="subpage" title="Drain Replacement" description="An older property comes with older drains, old clay drains (which are no longer used in modern plumbing) can crack and are susceptible to root invasion. Old galvanised steel drains can rust and leak or rust and block. Our plumbers are qualified to assess, upgrade and replace your drains." />
+                <BusinessPoint source="subpage" title="" description="Laundry room sinks, washing machine water line, gas dryer line"/>
+                <BusinessPoint source="subpage" title="" description="Bathroom faucets, sinks, and vanities"/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Kitchen faucets, sinks, and appliances"/>
+                <BusinessPoint source="subpage" title="" description="Showers and bathtubs"/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Toilets"/>
+                <BusinessPoint source="subpage" title="" description="Refrigerator water lines"/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Instant hot water dispenser"/>
+                <BusinessPoint source="subpage" title="" description="Garbage disposal"/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Outdoor hose bibbs, drinking fountains, gas BBQs"/>
+            </div>
+        </div>
+        <div className="bPContainer">
+            <div className="section-title" id="repairs">Repairs</div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Use a plumber you can trust! Appliance and fixture repairs can be deceiving and hard to understand. You can expect the most cost-efficient solutions from our professional plumbers. Fixing a simple leak can save you hundreds or thousands of dollars on your water bill and water damage repair."/>
+            </div>
+        </div>
+        <div className="bPContainer">
+            <div className="section-title" id="routinemaintenance">Routine Maintenance</div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="We offer maintenance and annual maintenance. Routine maintenance can save your home from numerous potential water hazards. We provide a list of safety checks to ensure a potential leak is resolved before it occurs. Our list includes but is not limited to the following."/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Water supply line quality"/>
+                <BusinessPoint source="subpage" title="" description="Water/drain line damage"/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Emergency shut off valves in working condition"/>
+                <BusinessPoint source="subpage" title="" description="Toilets checked for leaks"/>
+            </div>
+            <div className="bPRow">
+                <BusinessPoint source="subpage" title="" description="Under sink water spot inspection"/>
             </div>
         </div>
         <style jsx>{`
@@ -23,7 +68,11 @@ const PlumbingFixtures = () => (
                 }
                 
                 .bPRow {
-                    margin: 20px 13px;
+                    margin: 0px 13px;
+                }
+                
+                .section-title {
+                    margin-left: 12px;
                 }
             }
             
@@ -37,7 +86,11 @@ const PlumbingFixtures = () => (
                     margin-top: 40px;
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: space-around;
+                    justify-content: flex-start;
+                }
+                
+                .section-title {
+                    margin-left: 60px;
                 }
             }
             
@@ -51,12 +104,25 @@ const PlumbingFixtures = () => (
                     margin-top: 30px;
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: space-around;
+                    justify-content: flex-start;
+                }
+                
+                .section-title {
+                    margin-left: 112px;
                 }
             }
             
             .bPContainer {
+                padding-bottom: 60px;
                 width: 100%;
+            }
+            
+            .section-title {
+                padding-top: 40px;
+                color: #000000;
+                font-family: "Avenir Next";
+                font-size: 35px;
+                font-weight: 500;
             }
         `}</style>
     </SubPage>

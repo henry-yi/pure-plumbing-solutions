@@ -69,8 +69,7 @@ const WaterHeater = () => (
                     margin-left: 12px;
                 }
             }
-            
-            
+                
             @media (min-width: 1024px) {
                 .bPContainer {
                     padding-bottom: 40px;
