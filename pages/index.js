@@ -6,11 +6,12 @@ import Link from 'next/link';
 const Index = () => (
     <Layout>
         <div className="jumbotron">
-            <img className="jumbo-img" src="../static/valve.jpg"></img>
-            <div className="cta-text">Need A Plumber?<br/>We Can Help.</div>
-            <Link className="cta-link" href="/contact">
-                <div className="cta-button">Get Free Quote</div>
-            </Link>
+            <div className="cta-box">
+                <div className="cta-text">Need A Plumber?<br/>We Can Help.</div>
+                <Link className="cta-link" href="/contact">
+                    <div className="cta-button">Get Free Quote</div>
+                </Link>
+            </div>
         </div>
         <div className="helpCards">
             <HowCanWeHelpCard destination="waterheater" ico="fire" title="Water Heater" items={["Installation","Repairs","Routine Maintenance","Products"]}/>
@@ -38,152 +39,20 @@ const Index = () => (
             </div>
         </div>
         <style jsx>{`
-            @media (min-width: 320px) and (max-width: 1023px) {
-                .jumbotron {
-                    height: 430px;
-                }
-
-                .cta-text {
-                    text-align: center;
-                }
-
-                .cta-button {
-                    margin: 25px auto;
-                    width: 240px;
-                }
-
-                .helpCards {
-                    flex-wrap: wrap;
-                    margin: 0 10px;
-                }
-
-                .helpCardTitle {
-                    font-size: 27px;
-                    text-align: center;
-                }
-
-                .business-points {
-                    padding-bottom: 40px;
-                }
-
-                .business-point__title {
-                    text-align: center;
-                    padding-top: 20px;
-                    margin-bottom: 20px;
-                    font-size: 24px;
-                }
-
-                .business-points__bullets {
-                    margin: 0 16px;
-                    margin-top: 0px;
-                }
-
-                .callUs {
-                    margin-top: -1px;
-                    height: 96px;
-                    flex-wrap: wrap;
-                    font-size: 24px;
-                    line-height: 48px;     
-                }
-
-                .callUs .callUsText {
-                    text-align: center;
-                    width: 100%;
-                    height: 8px;
-                }
-
-                .callUs .callUsPhone {
-                    margin-bottom: 10px;
-                    height: 38px;
-                    text-align: center;
-                    width: 100%;
-                }
-            }
-
-            @media (min-width: 1024px) {
-                .jumbotron {
-                    height: 600px;
-                    position: relative;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 110.39%);
-                }
-
-                .cta-text {
-                    margin-left: 60px;
-                    margin-bottom: 22px;
-                }
-
-                .cta-button {	
-                    position: absolute;
-                    right: 19.5%;
-                    bottom: 23%;
-                }
-
-                .helpCards {
-                    margin: 0 60px;
-                }
-
-                .helpCardTitle {
-                    font-size: 27px;
-                    text-align: center;
-                }
-
-                .business-points {
-                    padding-bottom: 40px;
-                }
-
-                .business-point__title {
-                    margin-left: 60px;
-                    padding-top: 40px;
-                    font-size: 30px;
-                }
-
-                .business-points__bullets {
-                    margin: 0 60px;
-                    margin-top: 40px;
-                }
-
-                .callUs {
-                    height: 128px;
-                    font-size: 30px;
-                }
-
-                .callUs .callUsText {
-                    margin-right: 7px;
-                }
-
-                .callUs .callUsPhone {
-                    margin-left: 7px;
-                }
-
-                .jumbo-img {
-                    position: absolute;
-                    width: 100%;
-                    top: 0px;
-                    z-index: -1;
-                }
-
-                .cta-text {
-                    position: absolute;
-                    right: 8.5%;
-                    bottom: 30%;
-                    font-size: 42px;
-                    font-family: "PT Serif";
-                }
-            }
-
             @media (min-width: 1440px) {
                 .jumbotron {
                     height: 690px;
                 }
 
+                .cta-box {
+                    width: 319px;
+                }
+
                 .cta-text {
-                    margin-left: 112px;
-                    margin-bottom: 22px;
+                    width: 319px;
                 }
 
                 .cta-button {
-                    margin-top: 22px;
-                    margin-left: 112px;	
                     width: 319px;
                 }
 
@@ -227,35 +96,32 @@ const Index = () => (
 
             .jumbotron {
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
+                justify-content: flex-end;
+                align-items: center;
                 width: 100%;
-
-                height: 600px;
+                height: 720px;
                 position: relative;
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 110.39%);
-            
+                padding-top: 72px;
+                background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 110.39%), url('../static/valve.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
             }
-
-
-            .jumbo-img {
-                position: absolute;
-                width: 100%;
-                top: 0px;
-                z-index: -1;
+            
+            .cta-box {
+                width: 319px;
+                margin-right: 6.67%;
+                margin-bottom: 50px;
             }
 
             .cta-text {
                 font-size: 42px;	
                 font-weight: 500;	
-                line-height: 48px;
+                line-height: 64px;
                 color: #FFFFFF;
-
-                position: absolute;
-                right: 8.5%;
-                bottom: 30%;
-                font-size: 42px;
-                font-family: "PT Serif";
+                font-size: 40px;
+                font-family: "Helvetica";
+                margin-bottom: 16px;
             }
 
             .cta-button {
@@ -264,16 +130,13 @@ const Index = () => (
                 height: 44px;
                 background-color: #0D8AF5;
                 color: #FFFFFF;
-                font-family: "Source Sans Pro";
+                font-family: "Helvetica";
                 font-size: 21px;
                 font-weight: 500;
                 line-height: 42px;
                 text-align: center;
                 border-radius: 4px;
-                position: absolute;
-                right: 19.5%;
-                bottom: 23%;
-
+                padding: 6px 18px;
             }
 
             .helpCards {

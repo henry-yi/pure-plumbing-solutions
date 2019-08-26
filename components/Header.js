@@ -22,6 +22,7 @@ const Header = () => (
             width: 100%;
             position: fixed;
             background: #ffffff;
+            z-index: 1;
         }
 
         .header__logo-bar {
