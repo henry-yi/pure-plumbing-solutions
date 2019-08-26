@@ -6,9 +6,10 @@ import Link from 'next/link';
 const Index = () => (
     <Layout>
         <div className="jumbotron">
-            <div className="cta-text">Pure Honesty, Solutions, and Satisfaction</div>
-            <Link href="/contact">
-                <button className="cta-button">Contact Us Now</button>
+            <img className="jumbo-img" src="../static/valve.jpg"></img>
+            <div className="cta-text">Need A Plumber?<br/>We Can Help.</div>
+            <Link className="cta-link" href="/contact">
+                <div className="cta-button">Get Free Quote</div>
             </Link>
         </div>
         <div className="helpCards">
@@ -101,7 +102,9 @@ const Index = () => (
 
             @media (min-width: 1024px) {
                 .jumbotron {
-                    height: 430px;
+                    height: 600px;
+                    position: relative;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 110.39%);
                 }
 
                 .cta-text {
@@ -109,10 +112,10 @@ const Index = () => (
                     margin-bottom: 22px;
                 }
 
-                .cta-button {
-                    margin-top: 22px;
-                    margin-left: 60px;	
-                    width: 319px;
+                .cta-button {	
+                    position: absolute;
+                    right: 19.5%;
+                    bottom: 23%;
                 }
 
                 .helpCards {
@@ -150,6 +153,21 @@ const Index = () => (
 
                 .callUs .callUsPhone {
                     margin-left: 7px;
+                }
+
+                .jumbo-img {
+                    position: absolute;
+                    width: 100%;
+                    top: 0px;
+                    z-index: -1;
+                }
+
+                .cta-text {
+                    position: absolute;
+                    right: 8.5%;
+                    bottom: 30%;
+                    font-size: 42px;
+                    font-family: "PT Serif";
                 }
             }
 
@@ -212,25 +230,50 @@ const Index = () => (
                 flex-direction: column;
                 justify-content: center;
                 width: 100%;
-                background-color: #D8D8D8;
+
+                height: 600px;
+                position: relative;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 110.39%);
+            
+            }
+
+
+            .jumbo-img {
+                position: absolute;
+                width: 100%;
+                top: 0px;
+                z-index: -1;
             }
 
             .cta-text {
-                font-size: 35px;	
+                font-size: 42px;	
                 font-weight: 500;	
                 line-height: 48px;
+                color: #FFFFFF;
+
+                position: absolute;
+                right: 8.5%;
+                bottom: 30%;
+                font-size: 42px;
+                font-family: "PT Serif";
             }
 
             .cta-button {
                 cursor: pointer;
-                height: 75px;
-                background-color: #2E69A5;
+                width: 160px;
+                height: 44px;
+                background-color: #0D8AF5;
                 color: #FFFFFF;
-                font-family: "Avenir Next";
-                font-size: 24px;
+                font-family: "Source Sans Pro";
+                font-size: 21px;
                 font-weight: 500;
-                line-height: 48px;
+                line-height: 42px;
                 text-align: center;
+                border-radius: 4px;
+                position: absolute;
+                right: 19.5%;
+                bottom: 23%;
+
             }
 
             .helpCards {
