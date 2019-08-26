@@ -20,13 +20,14 @@ const Header = () => (
         <style jsx>{`
         .header {
             width: 100%;
+            position: fixed;
+            background: #ffffff;
         }
 
         .header__logo-bar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: #ffffff;
         }
 
         .header__logo {
