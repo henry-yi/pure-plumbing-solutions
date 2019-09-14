@@ -38,46 +38,6 @@ const Index = () => (
             </Link>
         </div>
         <style jsx>{`
-            @media (min-width: 1440px) {
-                .jumbotron {
-                    height: 690px;
-                }
-
-                .cta-box {
-                    width: 319px;
-                }
-
-                .cta-text {
-                    width: 319px;
-                }
-
-                .cta-button {
-                    width: 319px;
-                }
-
-                .helpCards {
-                    margin: 0 112px;
-                }
-
-                .helpCardTitle {
-                    font-size: 35px;
-                    text-align: left;
-                }
-
-                .business-points__title {
-                    margin-left: 13%;
-                    padding-top: 58px;
-                    font-size: 40px;
-                    line-height: 56px;
-                }
-
-                .business-points__bullets {
-                    margin-left: 13%;
-                    margin-right: 13%;
-                    margin-top: 32px;
-                }
-            }
-
             .promises {
                 background: url('../static/wave.svg') bottom center;
                 background-size: 100%;
@@ -98,7 +58,7 @@ const Index = () => (
                 background-size: cover;
                 background-repeat: no-repeat;
             }
-            
+
             .cta-box {
                 width: 319px;
                 margin-right: 6.67%;
@@ -168,7 +128,90 @@ const Index = () => (
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
-            }             
+            }   
+
+            @media (min-width: 1024px) {
+                .jumbotron {
+                    height: 690px;
+                }
+
+                .cta-box {
+                    width: 319px;
+                }
+
+                .cta-text {
+                    width: 319px;
+                }
+
+                .cta-button {
+                    width: 319px;
+                }
+
+                .helpCards {
+                    margin: 0 112px;
+                }
+
+                .helpCardTitle {
+                    font-size: 35px;
+                    text-align: left;
+                }
+
+                .business-points__title {
+                    margin-left: 13%;
+                    padding-top: 38px;
+                    font-size: 40px;
+                    line-height: 56px;
+                }
+
+                .business-points__bullets {
+                    margin-left: 13%;
+                    margin-right: 13%;
+                }
+
+                .promises {
+                    height: 380px;
+                }
+            }
+
+            @media (min-width: 1440px) {
+                .jumbotron {
+                    height: 690px;
+                }
+
+                .cta-box {
+                    width: 319px;
+                }
+
+                .cta-text {
+                    width: 319px;
+                }
+
+                .cta-button {
+                    width: 319px;
+                }
+
+                .helpCards {
+                    margin: 0 112px;
+                }
+
+                .helpCardTitle {
+                    font-size: 35px;
+                    text-align: left;
+                }
+
+                .business-points__title {
+                    margin-left: 13%;
+                    padding-top: 58px;
+                    font-size: 40px;
+                    line-height: 56px;
+                }
+
+                .business-points__bullets {
+                    margin-left: 13%;
+                    margin-right: 13%;
+                    margin-top: 32px;
+                }
+            }          
         `}</style>
     </Layout>
 )

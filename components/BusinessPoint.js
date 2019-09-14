@@ -75,6 +75,7 @@ const BusinessPoint = (props) => (
 
             .title {
                 font-size: 24px;
+                display: inline-block;
             }
 
             .description {

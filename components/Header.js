@@ -72,6 +72,28 @@ const Header = () => (
             cursor: pointer; 
         }
         
+        @media (min-width: 1024px) {
+            .header__logo-bar {
+                height: 72px;
+                margin: 0% 6.67%;
+            }
+
+            .header__logo {
+                height: 48px;
+                width: 180px;
+            }
+
+            .nav-bar__item {
+                margin: 0 23px;
+                font-size: 18px;
+            }
+
+            .nav-bar__item:hover {
+                color: #2E69A5;
+                transition: 0.3s;
+            }
+        }
+
         @media (min-width: 1440px) {
             .header__logo-bar {
                 height: 72px;
