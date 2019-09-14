@@ -3,17 +3,10 @@ import Link from 'next/link';
 const HowCanWeHelpCard = (props) => (
     <Link href={"/" + props.destination}>
         <div className="cardContainer">
-            <div className="cardContent">
+            <div className="cardCircle">
                 <i className={"helpCardIco fas fa-" + props.ico} />
-                <br />
-                <p className="cardTitle">{props.title}</p>
-                <div className="cardText">{
-                    props.items.map((item, index) => (
-                        <div key={index}>{item}</div>
-                    ))
-                    }
-                </div>
             </div>
+            <p className="cardTitle">{props.title}</p>
             <style jsx>{`
             .cardContainer {
                 background-color: #FFFFFF;
@@ -57,20 +50,29 @@ const HowCanWeHelpCard = (props) => (
             @media (min-width: 1024px) {
                 .cardContainer {
                     width: 320px;
-                    height: 356px;
+                    height: 200px;
                 }
 
-                .cardContainer:hover {
-                    background-color: #2E69A5;
+                .cardCircle {
+                    border-radius: 100px;
+                    height: 100px;
+                    width: 100px;
+                    background-color: #EDF4FF;
+                    margin: auto;
+                    
                 }
 
                 .helpCardIco {
                     font-size: 31px;
+                    position: relative;
+                    left: 39px;
+                    top: 31px;
                 }
 
                 .cardTitle {
                     font-size: 21px;
                     margin: 13px 7px;
+                    text-align: center;
                 }
 
                 .cardText {
@@ -82,10 +84,6 @@ const HowCanWeHelpCard = (props) => (
                 .cardContainer {
                     width: 320px;
                     height: 360px;
-                }
-
-                .cardContainer:hover {
-                    background-color: #2E69A5;
                 }
 
                 .helpCardIco {
