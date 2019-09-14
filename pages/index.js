@@ -166,6 +166,7 @@ const Index = () => (
                 .business-points__bullets {
                     margin-left: 13%;
                     margin-right: 13%;
+                    margin-top: 18px;
                 }
 
                 .promises {
