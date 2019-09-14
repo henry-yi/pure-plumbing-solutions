@@ -33,7 +33,9 @@ const Index = () => (
                 <HowCanWeHelpCard destination="plumbingfixtures" ico="toilet" title="Fixtures" items={["Installation & Repairs","Faucets","Toilets","Sinks","Showers"]}/>
                 <HowCanWeHelpCard destination="homeimprovementplan" ico="tasks" title="Home Improvement" items={["Annual Maintenance Plan","Pure Satisfaction","Honesty","Solutions"]}/>
             </div>
-            <div className="cta-button">Get Free Quote</div>
+            <Link href="/contact">
+                <div className="cta-button">Get Free Quote</div>
+            </Link>
         </div>
         <style jsx>{`
             @media (min-width: 1440px) {
