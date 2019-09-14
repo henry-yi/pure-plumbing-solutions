@@ -9,9 +9,17 @@ const HowCanWeHelpCard = (props) => (
             <p className="cardTitle">{props.title}</p>
             <style jsx>{`
             .cardContainer {
-                background-color: #FFFFFF;
-                -webkit-transition: all 1s;
-                transition: all 1s;    
+                background-color: #FFFFFF;  
+            }
+
+            .cardCircle {
+                cursor: pointer;
+                background-color: #EDF4FF;
+                transition: background-color 0.5s ease;
+            }
+
+            .cardCircle:hover {
+                background-color: #C7CED9;
             }
 
             .cardContent {
@@ -19,10 +27,14 @@ const HowCanWeHelpCard = (props) => (
                 text-align: center;
             }
 
+            .cardTitle { 
+                color: #032057;
+            }
+
             .cardText {
                 margin: 0 7px;
             }
-
+            
             .cardText div {
                 margin: 12px 0;
             }
@@ -57,7 +69,6 @@ const HowCanWeHelpCard = (props) => (
                     border-radius: 100px;
                     height: 100px;
                     width: 100px;
-                    background-color: #EDF4FF;
                     margin: auto;
                     text-align: center;
                     
@@ -91,7 +102,8 @@ const HowCanWeHelpCard = (props) => (
                 }
 
                 .cardTitle {
-                    font-size: 22px;
+                    font-size: 24px;
+                    line-height: 36px;
                 }
 
                 .cardText {

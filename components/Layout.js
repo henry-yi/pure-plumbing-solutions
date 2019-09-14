@@ -19,6 +19,7 @@ const Layout = (props) => (
 
             body {
                 margin: 0px;
+                font-family: Helvetica;
             }
         `}</style>
     </div>

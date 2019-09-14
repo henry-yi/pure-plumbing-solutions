@@ -130,12 +130,13 @@ const Index = () => (
 
             .helpSectionTitle {
                 font-size: 40px;
+                line-height: 56px;
+                color: #626366;
                 margin-top: 25px;
                 margin-bottom: 25px;
             }
 
             .helpCards {
-                cursor: pointer;
                 margin-left: 13%;
                 margin-right: 13%;
             }
