@@ -8,18 +8,21 @@ const Index = () => (
         <div className="jumbotron">
             <div className="cta-box">
                 <div className="cta-text">Need A Plumber?<br/>We Can Help.</div>
-                <Link className="cta-link" href="/contact">
+                <Link href="/contact">
                     <div className="cta-button">Get Free Quote</div>
                 </Link>
             </div>
         </div>
         <div className="helpCards">
-            <HowCanWeHelpCard destination="waterheater" ico="fire" title="Water Heater" items={["Installation","Repairs","Routine Maintenance","Products"]}/>
-            <HowCanWeHelpCard destination="seweranddrain" ico="wrench" title="Sewer & Drain" items={["Drain Cleaning","Sewer Repairs","Main Line Installation","Underfloor Drain Line Inspection"]}/>
-            <HowCanWeHelpCard destination="gas" ico="burn" title="Gas" items={["Pipe Installation","Leak Detection","Repairs","Appliance Hook Up"]}/>
-            <HowCanWeHelpCard destination="plumbingfixtures" ico="toilet" title="Plumbing Fixtures" items={["Installation & Repairs","Faucets","Toilets","Sinks","Showers"]}/>
-            <HowCanWeHelpCard destination="water" ico="tint" title="Water" items={["Pipe Installation","Leak Detection","Repairs","Emergency Shut Off","Pressure Reducing Valve"]}/>
-            <HowCanWeHelpCard destination="homeimprovementplan" ico="tasks" title="Home Improvement Plan" items={["Annual Maintenance Plan","Pure Satisfaction","Honesty","Solutions"]}/>
+            <div className="helpSectionTitle">Our Services</div>
+            <div className="helpCardBox">
+                <HowCanWeHelpCard destination="waterheater" ico="fire" title="Water Heater" items={["Installation","Repairs","Routine Maintenance","Products"]}/>
+                <HowCanWeHelpCard destination="seweranddrain" ico="wrench" title="Sewer & Drain" items={["Drain Cleaning","Sewer Repairs","Main Line Installation","Underfloor Drain Line Inspection"]}/>
+                <HowCanWeHelpCard destination="gas" ico="burn" title="Gas" items={["Pipe Installation","Leak Detection","Repairs","Appliance Hook Up"]}/>
+                <HowCanWeHelpCard destination="plumbingfixtures" ico="toilet" title="Fixtures" items={["Installation & Repairs","Faucets","Toilets","Sinks","Showers"]}/>
+                <HowCanWeHelpCard destination="homeimprovementplan" ico="tasks" title="Home Improvement" items={["Annual Maintenance Plan","Pure Satisfaction","Honesty","Solutions"]}/>
+            </div>
+            <div className="cta-button">Get Free Quote</div>
         </div>
         <div className="callUs">
             <div className="callUsText">Call Us Today</div>
@@ -139,15 +142,31 @@ const Index = () => (
                 padding: 6px 18px;
             }
 
+            .helpSectionTitle {
+                font-size: 40px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+
             .helpCards {
                 cursor: pointer;
-                display: flex;
-                justify-content: center;
+                margin-left: 13%;
+                margin-right: 13%;
             }
 
             .helpCardTitle {
                 margin-top: 40px;
                 font-weight: bold;
+            }
+
+            .helpCardBox {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .helpCards .cta-button {
+                margin: auto;
+                margin-bottom: 100px;
             }
 
             .business-points {
