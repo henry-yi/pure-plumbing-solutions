@@ -83,7 +83,7 @@ const HowCanWeHelpCard = (props) => (
             @media (min-width: 1440px) {
                 .cardContainer {
                     width: 320px;
-                    height: 360px;
+                    height: 250px;
                 }
 
                 .helpCardIco {

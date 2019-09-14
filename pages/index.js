@@ -35,10 +35,6 @@ const Index = () => (
             </div>
             <div className="cta-button">Get Free Quote</div>
         </div>
-        <div className="callUs">
-            <div className="callUsText">Call Us Today</div>
-            <div className="callUsPhone">(408) 891-0720</div>
-        </div>
         <style jsx>{`
             @media (min-width: 1440px) {
                 .jumbotron {
@@ -77,19 +73,6 @@ const Index = () => (
                     margin-left: 13%;
                     margin-right: 13%;
                     margin-top: 32px;
-                }
-
-                .callUs {
-                    height: 128px;
-                    font-size: 30px;   
-                }
-
-                .callUs .callUsText {
-                    margin-right: 7px;
-                }
-
-                .callUs .callUsPhone {
-                    margin-left: 7px;
                 }
             }
 
@@ -182,19 +165,7 @@ const Index = () => (
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
-            }
-
-            .callUs {
-                background-color: black;
-                color: #FFFFFF;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }          
-
-            .callUs .callUsPhone {
-                color: #2E69A5;
-            }                
+            }             
         `}</style>
     </Layout>
 )
