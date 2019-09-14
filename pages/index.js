@@ -130,6 +130,12 @@ const Index = () => (
                 justify-content: space-between;
             }   
 
+            @media (min-width: 320px) and (max-width: 1023px) {
+                .jumbotron {
+                    width: 320px;
+                }
+            }
+
             @media (min-width: 1024px) {
                 .jumbotron {
                     height: 550px;
