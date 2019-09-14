@@ -17,14 +17,42 @@ const BusinessPoint = (props) => (
         }
 
         .title {
-            font-family: "Avenir Next";
-            font-weight: 500;
+            font-family: "Helvetica";
+            font-weight: normal;
+            line-height: 48px;
+            font-size: 32px;
+            color: #032057;
+
+        }
+
+        .title::after {
+            content: "";
+            display: block;
+            width: 55px;
+            border-bottom: 5px solid #FD9361;
+        }
+
+        .title:hover::after {
+            animation-name: underline;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
         }
 
         .description {
-            font-family: "Avenir Next";
-            line-height: 33px;
+            padding-top: 12px;
+            font-family: "Helvetica";
+            font-size: 24px;
+            line-height: 36px;
+            color: #626366;
         }
+
+        @keyframes underline {
+            from {width: 55px;}
+            to {width: 100%;}
+        }
+
+
 
         @media (min-width: 320px) and (max-width: 1023px) {
             .container {
@@ -59,12 +87,10 @@ const BusinessPoint = (props) => (
             }
 
             .title {
-                margin-left: 25px;
                 font-size: 24px;
             }
 
             .description {
-                margin-left: 25px;
                 font-size: 18px;
             }            
         }
@@ -80,12 +106,11 @@ const BusinessPoint = (props) => (
             }
 
             .title {
-                margin-left: 25px;
                 font-size: 24px;
+                display: inline-block;
             }
 
             .description {
-                margin-left: 25px;
                 font-size: 20px;
             }            
         }

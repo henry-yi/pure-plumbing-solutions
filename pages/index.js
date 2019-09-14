@@ -13,6 +13,17 @@ const Index = () => (
                 </Link>
             </div>
         </div>
+        <div className="promises">
+            <div className="business-points">
+                <div className="business-points__title">Our Promise</div>
+                <div className="business-points__bullets">
+                    <BusinessPoint source="index" title="Honest Advice" description="We promise to only give our honest assessments. If we don’t think it’s broken, we won’t tell you to fix it." />
+                    <BusinessPoint source="index" title="Punctual Service" description="We know you’re busy. Thats why we’ll always arrive within the hour of your scheduled time." />
+                    <BusinessPoint source="index" title="Solution Guaranteed" description="We’ll do our best to fix your issue but if we can’t, we won’t charge a dime, guaranteed." />
+                </div>
+            </div>
+        </div>
+
         <div className="helpCards">
             <div className="helpSectionTitle">Our Services</div>
             <div className="helpCardBox">
@@ -27,19 +38,6 @@ const Index = () => (
         <div className="callUs">
             <div className="callUsText">Call Us Today</div>
             <div className="callUsPhone">(408) 891-0720</div>
-        </div>
-        <div className="business-points">
-            <div className="business-point__title">Pure Plumbing Solutions</div>
-            <div className="business-points__bullets">
-                <BusinessPoint source="index" title="Local Plumber" description="Local to San Jose and serving most of the Silicon Valley" />
-                <BusinessPoint source="index" title="Honest" description="We will always give you an honest estimate that will not change!" />
-                <BusinessPoint source="index" title="$0 Solutions" description="We will always have a solution to your issue or there will be no charge to you!" />
-            </div>
-            <div className="business-points__bullets">
-                <BusinessPoint source="index" title="Clean" description="We are best known for the clean and tidy job we do" />
-                <BusinessPoint source="index" title="On Time" description="We will always be on time within the hour window you are given" />
-                <BusinessPoint source="index" title="Free Quotes" description="No obligations, free quotes!" />            
-            </div>
         </div>
         <style jsx>{`
             @media (min-width: 1440px) {
@@ -68,19 +66,17 @@ const Index = () => (
                     text-align: left;
                 }
 
-                .business-points {
-                    padding-bottom: 60px;
-                }
-
-                .business-point__title {
-                    margin-left: 112px;
-                    padding-top: 40px;
-                    font-size: 35px;
+                .business-points__title {
+                    margin-left: 13%;
+                    padding-top: 58px;
+                    font-size: 40px;
+                    line-height: 56px;
                 }
 
                 .business-points__bullets {
-                    margin: 0 60px;
-                    margin-top: 40px;
+                    margin-left: 13%;
+                    margin-right: 13%;
+                    margin-top: 32px;
                 }
 
                 .callUs {
@@ -95,6 +91,13 @@ const Index = () => (
                 .callUs .callUsPhone {
                     margin-left: 7px;
                 }
+            }
+
+            .promises {
+                background: url('../static/wave.svg') bottom center;
+                background-size: 100%;
+                height: 450px;
+                background-repeat: no-repeat;
             }
 
             .jumbotron {
@@ -169,21 +172,16 @@ const Index = () => (
                 margin-bottom: 100px;
             }
 
-            .business-points {
-                width: 100%;
-                background-color: #D8D8D8;
-            }
-
             .business-point__title {
-                color: #000000;
-                font-family: "Avenir Next";
+                color: #626366;
+                font-family: "Helvetica";
                 font-weight: 500;
             }
 
             .business-points__bullets {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-around;
+                justify-content: space-between;
             }
 
             .callUs {
