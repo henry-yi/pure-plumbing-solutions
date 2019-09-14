@@ -172,7 +172,7 @@ const Index = () => (
                 margin-bottom: 100px;
             }
 
-            .business-point__title {
+            .business-points__title {
                 color: #626366;
                 font-family: "Helvetica";
                 font-weight: 500;

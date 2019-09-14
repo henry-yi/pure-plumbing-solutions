@@ -1,6 +1,5 @@
 const BusinessPoint = (props) => (
     <div className="container">
-        <i className="icon fas fa-tint"></i>
         <div className="text-container">
             <div className="title">{props.title}</div>
             <div className="description">{props.description}</div>        
@@ -10,10 +9,6 @@ const BusinessPoint = (props) => (
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
-        }
-
-        .icon {
-            color: #2E69A5;
         }
 
         .title {
@@ -60,10 +55,6 @@ const BusinessPoint = (props) => (
                 width: 100%;
             }
 
-            .icon {
-                margin-top: 5px;
-            }
-
             .title {
                 margin-left: 10px;
                 font-size: 20px;
@@ -82,10 +73,6 @@ const BusinessPoint = (props) => (
                 width: ${sizes[props.source].medium};
             }
 
-            .icon {
-                margin-top: 8px;
-            }
-
             .title {
                 font-size: 24px;
             }
@@ -99,10 +86,6 @@ const BusinessPoint = (props) => (
             .container {
                 margin-left: 20px;
                 width: ${sizes[props.source].large};
-            }
-
-            .icon {
-                margin-top: 8px;
             }
 
             .title {

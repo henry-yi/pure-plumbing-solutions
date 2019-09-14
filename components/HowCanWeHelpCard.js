@@ -59,14 +59,14 @@ const HowCanWeHelpCard = (props) => (
                     width: 100px;
                     background-color: #EDF4FF;
                     margin: auto;
+                    text-align: center;
                     
                 }
 
                 .helpCardIco {
                     font-size: 31px;
                     position: relative;
-                    left: 39px;
-                    top: 31px;
+                    top: calc(50% - 20px);
                 }
 
                 .cardTitle {
