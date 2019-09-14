@@ -71,7 +71,6 @@ const HowCanWeHelpCard = (props) => (
                     width: 100px;
                     margin: auto;
                     text-align: center;
-                    
                 }
 
                 .helpCardIco {
@@ -95,6 +94,11 @@ const HowCanWeHelpCard = (props) => (
                 .cardContainer {
                     width: 320px;
                     height: 250px;
+                }
+
+                .cardCircle {
+                    height: 135px;
+                    width: 135px;
                 }
 
                 .helpCardIco {

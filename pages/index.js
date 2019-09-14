@@ -132,7 +132,7 @@ const Index = () => (
 
             @media (min-width: 1024px) {
                 .jumbotron {
-                    height: 690px;
+                    height: 550px;
                 }
 
                 .cta-box {
@@ -143,12 +143,8 @@ const Index = () => (
                     width: 319px;
                 }
 
-                .cta-button {
-                    width: 319px;
-                }
-
                 .helpCards {
-                    margin: 0 112px;
+                    margin: 0 13%;
                 }
 
                 .helpCardTitle {
@@ -187,12 +183,8 @@ const Index = () => (
                     width: 319px;
                 }
 
-                .cta-button {
-                    width: 319px;
-                }
-
                 .helpCards {
-                    margin: 0 112px;
+                    margin: 0 13%;
                 }
 
                 .helpCardTitle {
@@ -211,6 +203,10 @@ const Index = () => (
                     margin-left: 13%;
                     margin-right: 13%;
                     margin-top: 32px;
+                }
+
+                .promises {
+                    height: 450px;
                 }
             }          
         `}</style>
