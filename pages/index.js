@@ -138,7 +138,15 @@ const Index = () => (
 
             @media (min-width: 320px) and (max-width: 1023px) {
                 .jumbotron {
-                    width: 320px;
+                    width: 100%;
+                }
+
+                .helpCardBox {
+                    flex-direction: column;
+                }
+
+                .helpCards .cta-button {
+                    margin-top: 50px;
                 }
             }
 
