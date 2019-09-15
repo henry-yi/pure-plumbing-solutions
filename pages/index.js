@@ -5,93 +5,50 @@ import Link from 'next/link';
 
 const Index = () => (
     <Layout>
-        <div className="jumbotron">
-            <div className="cta-box">
-                <div className="cta-text">Need A Plumber?<br/>We Can Help.</div>
-                <Link className="cta-link" href="/contact">
+        <div className="wrapper">
+            <div className="jumbotron">
+                <div className="cta-box">
+                    <div className="cta-text">Need A Plumber?<br/>We Can Help.</div>
+                    <Link href="/contact">
+                        <div className="cta-button">Get Free Quote</div>
+                    </Link>
+                </div>
+            </div>
+            <div className="promises">
+                <div className="business-points">
+                    <div className="business-points__title">Our Promise</div>
+                    <div className="business-points__bullets">
+                        <BusinessPoint source="index" title="Honest Advice" description="We promise to only give our honest assessments. If we don’t think it’s broken, we won’t tell you to fix it." />
+                        <BusinessPoint source="index" title="Punctual Service" description="We know you’re busy. Thats why we’ll always arrive within the hour of your scheduled time." />
+                        <BusinessPoint source="index" title="Solution Guaranteed" description="We’ll do our best to fix your issue but if we can’t, we won’t charge a dime, guaranteed." />
+                    </div>
+                </div>
+            </div>
+
+            <div className="helpCards">
+                <div className="helpSectionTitle">Our Services</div>
+                <div className="helpCardBox">
+                    <HowCanWeHelpCard destination="waterheater" ico="fire" title="Water Heater" items={["Installation","Repairs","Routine Maintenance","Products"]}/>
+                    <HowCanWeHelpCard destination="seweranddrain" ico="wrench" title="Sewer & Drain" items={["Drain Cleaning","Sewer Repairs","Main Line Installation","Underfloor Drain Line Inspection"]}/>
+                    <HowCanWeHelpCard destination="gas" ico="burn" title="Gas" items={["Pipe Installation","Leak Detection","Repairs","Appliance Hook Up"]}/>
+                    <HowCanWeHelpCard destination="plumbingfixtures" ico="toilet" title="Fixtures" items={["Installation & Repairs","Faucets","Toilets","Sinks","Showers"]}/>
+                    <HowCanWeHelpCard destination="homeimprovementplan" ico="tasks" title="Home Improvement" items={["Annual Maintenance Plan","Pure Satisfaction","Honesty","Solutions"]}/>
+                </div>
+                <Link href="/contact">
                     <div className="cta-button">Get Free Quote</div>
                 </Link>
             </div>
         </div>
-        <div className="helpCards">
-            <HowCanWeHelpCard destination="waterheater" ico="fire" title="Water Heater" items={["Installation","Repairs","Routine Maintenance","Products"]}/>
-            <HowCanWeHelpCard destination="seweranddrain" ico="wrench" title="Sewer & Drain" items={["Drain Cleaning","Sewer Repairs","Main Line Installation","Underfloor Drain Line Inspection"]}/>
-            <HowCanWeHelpCard destination="gas" ico="burn" title="Gas" items={["Pipe Installation","Leak Detection","Repairs","Appliance Hook Up"]}/>
-            <HowCanWeHelpCard destination="plumbingfixtures" ico="toilet" title="Plumbing Fixtures" items={["Installation & Repairs","Faucets","Toilets","Sinks","Showers"]}/>
-            <HowCanWeHelpCard destination="water" ico="tint" title="Water" items={["Pipe Installation","Leak Detection","Repairs","Emergency Shut Off","Pressure Reducing Valve"]}/>
-            <HowCanWeHelpCard destination="homeimprovementplan" ico="tasks" title="Home Improvement Plan" items={["Annual Maintenance Plan","Pure Satisfaction","Honesty","Solutions"]}/>
-        </div>
-        <div className="callUs">
-            <div className="callUsText">Call Us Today</div>
-            <div className="callUsPhone">(408) 891-0720</div>
-        </div>
-        <div className="business-points">
-            <div className="business-point__title">Pure Plumbing Solutions</div>
-            <div className="business-points__bullets">
-                <BusinessPoint source="index" title="Local Plumber" description="Local to San Jose and serving most of the Silicon Valley" />
-                <BusinessPoint source="index" title="Honest" description="We will always give you an honest estimate that will not change!" />
-                <BusinessPoint source="index" title="$0 Solutions" description="We will always have a solution to your issue or there will be no charge to you!" />
-            </div>
-            <div className="business-points__bullets">
-                <BusinessPoint source="index" title="Clean" description="We are best known for the clean and tidy job we do" />
-                <BusinessPoint source="index" title="On Time" description="We will always be on time within the hour window you are given" />
-                <BusinessPoint source="index" title="Free Quotes" description="No obligations, free quotes!" />            
-            </div>
-        </div>
         <style jsx>{`
-            @media (min-width: 1440px) {
-                .jumbotron {
-                    height: 690px;
-                }
+            .wrapper {
+                overflow-x: hidden;
+            }
 
-                .cta-box {
-                    width: 319px;
-                }
-
-                .cta-text {
-                    width: 319px;
-                }
-
-                .cta-button {
-                    width: 319px;
-                }
-
-                .helpCards {
-                    margin: 0 112px;
-                }
-
-                .helpCardTitle {
-                    font-size: 35px;
-                    text-align: left;
-                }
-
-                .business-points {
-                    padding-bottom: 60px;
-                }
-
-                .business-point__title {
-                    margin-left: 112px;
-                    padding-top: 40px;
-                    font-size: 35px;
-                }
-
-                .business-points__bullets {
-                    margin: 0 60px;
-                    margin-top: 40px;
-                }
-
-                .callUs {
-                    height: 128px;
-                    font-size: 30px;   
-                }
-
-                .callUs .callUsText {
-                    margin-right: 7px;
-                }
-
-                .callUs .callUsPhone {
-                    margin-left: 7px;
-                }
+            .promises {
+                background: url('../static/wave.svg') bottom center;
+                background-size: 100%;
+                height: 450px;
+                background-repeat: no-repeat;
             }
 
             .jumbotron {
@@ -107,7 +64,7 @@ const Index = () => (
                 background-size: cover;
                 background-repeat: no-repeat;
             }
-            
+
             .cta-box {
                 width: 319px;
                 margin-right: 6.67%;
@@ -139,10 +96,17 @@ const Index = () => (
                 padding: 6px 18px;
             }
 
+            .helpSectionTitle {
+                font-size: 40px;
+                line-height: 56px;
+                color: #626366;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+
             .helpCards {
-                cursor: pointer;
-                display: flex;
-                justify-content: center;
+                margin-left: 13%;
+                margin-right: 13%;
             }
 
             .helpCardTitle {
@@ -150,34 +114,136 @@ const Index = () => (
                 font-weight: bold;
             }
 
-            .business-points {
-                width: 100%;
-                background-color: #D8D8D8;
+            .helpCardBox {
+                display: flex;
+                justify-content: space-between;
             }
 
-            .business-point__title {
-                color: #000000;
-                font-family: "Avenir Next";
+            .helpCards .cta-button {
+                margin: auto;
+                margin-bottom: 100px;
+            }
+
+            .business-points__title {
+                color: #626366;
+                font-family: "Helvetica";
                 font-weight: 500;
             }
 
             .business-points__bullets {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-around;
+                justify-content: space-between;
+            }   
+
+            @media (min-width: 320px) and (max-width: 1023px) {
+                .jumbotron {
+                    width: 100%;
+                    height: 100vh;
+                    align-items: center;
+                }
+
+                .cta-box {
+                    height: 112px;
+                    margin-left: 4.27%;
+                }
+    
+                .cta-text {
+                    font-size: 36px;	
+                }
+                
+                .business-points__title {
+                    padding-left: 4.27%;
+                    padding-top: 38px;
+                    font-size: 40px;
+                    line-height: 56px;
+                    background-color: #EDF4FF;
+                }
+                
+                .promises {
+                    height: 650px;
+                }
             }
 
-            .callUs {
-                background-color: black;
-                color: #FFFFFF;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }          
+            @media (min-width: 1024px) {
+                .jumbotron {
+                    height: 550px;
+                }
 
-            .callUs .callUsPhone {
-                color: #2E69A5;
-            }                
+                .cta-box {
+                    width: 319px;
+                }
+
+                .cta-text {
+                    width: 319px;
+                }
+
+                .helpCards {
+                    margin: 0 13%;
+                }
+
+                .helpCardTitle {
+                    font-size: 35px;
+                    text-align: left;
+                }
+
+                .business-points__title {
+                    margin-left: 13%;
+                    padding-top: 38px;
+                    font-size: 40px;
+                    line-height: 56px;
+                }
+
+                .business-points__bullets {
+                    margin-left: 13%;
+                    margin-right: 13%;
+                    margin-top: 18px;
+                }
+
+                .promises {
+                    height: 410px;
+                }
+            }
+
+            @media (min-width: 1440px) {
+                .jumbotron {
+                    height: 690px;
+                }
+
+                .cta-box {
+                    width: 319px;
+                }
+
+                .cta-text {
+                    width: 319px;
+                }
+
+                .helpCards {
+                    margin: 0 13%;
+                }
+
+                .helpCardTitle {
+                    font-size: 35px;
+                    text-align: left;
+                }
+
+                .business-points__title {
+                    margin-left: 13%;
+                    padding-top: 58px;
+                    font-size: 40px;
+                    line-height: 56px;
+                }
+
+                .business-points__bullets {
+                    margin-left: 13%;
+                    margin-right: 13%;
+                    margin-top: 32px;
+                }
+
+                .promises {
+                    height: 450px;
+                }
+            }          
         `}</style>
     </Layout>
 )

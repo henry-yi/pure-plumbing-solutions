@@ -16,6 +16,9 @@ const Header = () => (
                     <a className="nav-bar__item nav-bar__item__quote">Get Free Quote</a>            
                 </Link>                              
             </div>
+            <div className="header__right_mobile">
+                <div>Ham</div>                         
+            </div>            
         </div>
         <style jsx>{`
         .header {
@@ -42,6 +45,10 @@ const Header = () => (
             align-items: center;
             justify-content: center;
             background: #ffffff;
+        }
+
+        .header__right_mobile {
+            display: none;
         }
 
         .nav-bar__item {
@@ -72,6 +79,58 @@ const Header = () => (
             cursor: pointer; 
         }
         
+        @media (min-width: 320px) and (max-width: 1023px) {
+            .header__right {
+                display: none;
+            }
+
+            .header__right_mobile {
+                display: block;
+            }
+
+            .header__logo-bar {
+                height: 36px;
+                margin: 0% 6.67%;
+            }
+
+            .header__logo {
+                height: 24px;
+                width: 90px;
+            }
+
+            .nav-bar__item {
+                margin: 0 23px;
+                font-size: 18px;
+            }
+
+            .nav-bar__item:hover {
+                color: #2E69A5;
+                transition: 0.3s;
+            }            
+        }
+
+        @media (min-width: 1024px) {
+            .header__logo-bar {
+                height: 72px;
+                margin: 0% 6.67%;
+            }
+
+            .header__logo {
+                height: 48px;
+                width: 180px;
+            }
+
+            .nav-bar__item {
+                margin: 0 23px;
+                font-size: 18px;
+            }
+
+            .nav-bar__item:hover {
+                color: #2E69A5;
+                transition: 0.3s;
+            }
+        }
+
         @media (min-width: 1440px) {
             .header__logo-bar {
                 height: 72px;

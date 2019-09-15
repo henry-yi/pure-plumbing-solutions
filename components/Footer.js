@@ -15,7 +15,7 @@ const Footer = () => (
         <style jsx>{`
         .footer {
             background-color: #212222;
-            height: 175px;
+            height: 125px;
             width: 100%;
             display: flex;
             flex-direction: row;

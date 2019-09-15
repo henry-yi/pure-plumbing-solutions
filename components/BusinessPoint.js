@@ -1,6 +1,5 @@
 const BusinessPoint = (props) => (
     <div className="container">
-        <i className="icon fas fa-tint"></i>
         <div className="text-container">
             <div className="title">{props.title}</div>
             <div className="description">{props.description}</div>        
@@ -10,42 +9,71 @@ const BusinessPoint = (props) => (
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
-        }
-
-        .icon {
-            color: #2E69A5;
+            background-color: #EDF4FF;
         }
 
         .title {
-            font-family: "Avenir Next";
-            font-weight: 500;
+            font-family: "Helvetica";
+            font-weight: normal;
+            line-height: 48px;
+            font-size: 32px;
+            color: #032057;
+
+        }
+
+        .title::after {
+            content: "";
+            display: block;
+            width: 55px;
+            border-bottom: 5px solid #FD9361;
+        }
+
+        .title:hover::after {
+            animation-name: underline;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
         }
 
         .description {
-            font-family: "Avenir Next";
-            line-height: 33px;
+            padding-top: 12px;
+            font-family: "Helvetica";
+            font-size: 24px;
+            line-height: 36px;
+            color: #626366;
         }
+
+        @keyframes underline {
+            from {width: 55px;}
+            to {width: 100%;}
+        }
+
+
 
         @media (min-width: 320px) and (max-width: 1023px) {
             .container {
-                margin-left: 5px;
                 width: 100%;
             }
 
-            .icon {
-                margin-top: 5px;
-            }
-
             .title {
-                margin-left: 10px;
+                margin-left: 4.27%;
                 font-size: 20px;
             }
 
             .description {
-                margin-left: 10px;
-                font-size: 16px;
+                margin-left: 4.27%;
+                font-size: 18px;
                 margin-bottom: 20px;
-            }            
+            }
+            
+            .title:hover::after {
+                animation-name: underline;
+            }
+            
+            @keyframes underline {
+                from {width: 55px;}
+                to {width: 55px;}
+            }
         }
 
         @media (min-width: 1024px) {
@@ -54,17 +82,12 @@ const BusinessPoint = (props) => (
                 width: ${sizes[props.source].medium};
             }
 
-            .icon {
-                margin-top: 8px;
-            }
-
             .title {
-                margin-left: 25px;
                 font-size: 24px;
+                display: inline-block;
             }
 
             .description {
-                margin-left: 25px;
                 font-size: 18px;
             }            
         }
@@ -75,17 +98,12 @@ const BusinessPoint = (props) => (
                 width: ${sizes[props.source].large};
             }
 
-            .icon {
-                margin-top: 8px;
-            }
-
             .title {
-                margin-left: 25px;
                 font-size: 24px;
+                display: inline-block;
             }
 
             .description {
-                margin-left: 25px;
                 font-size: 20px;
             }            
         }
@@ -95,7 +113,7 @@ const BusinessPoint = (props) => (
 
 const sizes = {
     index: {
-        medium: "250px",
+        medium: "230px",
         large: "310px"
     },
     subpage: {
