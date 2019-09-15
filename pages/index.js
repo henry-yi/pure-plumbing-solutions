@@ -139,6 +139,13 @@ const Index = () => (
             @media (min-width: 320px) and (max-width: 1023px) {
                 .jumbotron {
                     width: 100%;
+                    height: 100vh;
+                    align-items: center;
+                }
+
+                .cta-box {
+                    height: 112px;
+                    margin-left: 4.27%;
                 }
 
                 .helpCardBox {
@@ -147,6 +154,22 @@ const Index = () => (
 
                 .helpCards .cta-button {
                     margin-top: 50px;
+                }
+    
+                .cta-text {
+                    font-size: 36px;	
+                }
+                
+                .business-points__title {
+                    padding-left: 4.27%;
+                    padding-top: 38px;
+                    font-size: 40px;
+                    line-height: 56px;
+                    background-color: #EDF4FF;
+                }
+                
+                .promises {
+                    height: 650px;
                 }
             }
 
@@ -186,7 +209,7 @@ const Index = () => (
                 }
 
                 .promises {
-                    height: 380px;
+                    height: 410px;
                 }
             }
 

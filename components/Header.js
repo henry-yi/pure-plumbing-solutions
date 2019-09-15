@@ -22,7 +22,7 @@ const Header = () => (
         </div>
         <style jsx>{`
         .header {
-            width: 100vw;
+            width: 100%;
             position: fixed;
             background: #ffffff;
             z-index: 1;

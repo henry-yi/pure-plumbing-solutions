@@ -9,6 +9,7 @@ const BusinessPoint = (props) => (
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
+            background-color: #EDF4FF;
         }
 
         .title {
@@ -51,20 +52,28 @@ const BusinessPoint = (props) => (
 
         @media (min-width: 320px) and (max-width: 1023px) {
             .container {
-                margin-left: 5px;
                 width: 100%;
             }
 
             .title {
-                margin-left: 10px;
+                margin-left: 4.27%;
                 font-size: 20px;
             }
 
             .description {
-                margin-left: 10px;
-                font-size: 16px;
+                margin-left: 4.27%;
+                font-size: 18px;
                 margin-bottom: 20px;
-            }            
+            }
+            
+            .title:hover::after {
+                animation-name: underline;
+            }
+            
+            @keyframes underline {
+                from {width: 55px;}
+                to {width: 55px;}
+            }
         }
 
         @media (min-width: 1024px) {
@@ -104,7 +113,7 @@ const BusinessPoint = (props) => (
 
 const sizes = {
     index: {
-        medium: "250px",
+        medium: "230px",
         large: "310px"
     },
     subpage: {
