@@ -147,6 +147,14 @@ const Index = () => (
                     height: 112px;
                     margin-left: 4.27%;
                 }
+
+                .helpCardBox {
+                    flex-direction: column;
+                }
+
+                .helpCards .cta-button {
+                    margin-top: 50px;
+                }
     
                 .cta-text {
                     font-size: 36px;	
