@@ -147,6 +147,11 @@ const Index = () => (
                     height: 112px;
                     margin-left: 4.27%;
                 }
+                
+                .helpCards {
+                    margin-top: 80px;
+                    margin-left: 4.27%;
+                }
 
                 .helpCardBox {
                     flex-direction: column;
@@ -210,6 +215,7 @@ const Index = () => (
 
                 .promises {
                     height: 410px;
+                    margin-top: -100px;
                 }
             }
 
