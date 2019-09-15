@@ -202,7 +202,7 @@ const Index = () => (
 
                 .business-points__title {
                     margin-left: 13%;
-                    padding-top: 38px;
+                    padding-top: 60px;
                     font-size: 40px;
                     line-height: 56px;
                 }
@@ -215,7 +215,7 @@ const Index = () => (
 
                 .promises {
                     height: 410px;
-                    margin-top: -100px;
+                    margin-top: -40px;
                 }
             }
 
@@ -256,6 +256,7 @@ const Index = () => (
 
                 .promises {
                     height: 450px;
+                    margin-top: 0px;
                 }
             }          
         `}</style>
