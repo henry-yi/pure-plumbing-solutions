@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import Router from 'next/router';
+import { withRouter } from 'next/router';
 
-const Header = (props) => (
+const Header = ({ router }) => (
     <div className="header">
         <div className="header__logo-bar">
             <Link href="/">
@@ -13,7 +13,7 @@ const Header = (props) => (
                 <Link href="/about">
                     <a className="nav-bar__item">About</a>            
                 </Link>
-                {Router.route !== '/contact' &&             
+                {router.pathname !== '/contact' &&             
                 <Link href="/contact">
                     <a className="nav-bar__item nav-bar__item__quote">Get Free Quote</a>            
                 </Link>}                              
@@ -164,4 +164,4 @@ const Header = (props) => (
     </div>
 )
 
-export default Header;
+export default withRouter(Header);
