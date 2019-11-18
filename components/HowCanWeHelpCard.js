@@ -13,14 +13,14 @@ const HowCanWeHelpCard = (props) => (
             }
 
             .cardCircle {
-                cursor: pointer;
+                /*cursor: pointer;*/
                 background-color: #EDF4FF;
                 transition: background-color 0.5s ease;
             }
 
-            .cardCircle:hover {
+            /*.cardCircle:hover {
                 background-color: #C7CED9;
-            }
+            }*/
 
             .cardContent {
                 margin: 30px 0;

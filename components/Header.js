@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import Router from 'next/router';
 
-const Header = () => (
+const Header = (props) => (
     <div className="header">
         <div className="header__logo-bar">
             <Link href="/">
@@ -8,17 +9,24 @@ const Header = () => (
             </Link>
             
             <div className="header__right">
-                <a className="nav-bar__item nav-bar__item--dropdown">Services</a>
+                {/* <a className="nav-bar__item nav-bar__item--dropdown">Services</a> */}
                 <Link href="/about">
                     <a className="nav-bar__item">About</a>            
-                </Link>            
+                </Link>
+                {Router.route !== '/contact' &&             
                 <Link href="/contact">
                     <a className="nav-bar__item nav-bar__item__quote">Get Free Quote</a>            
-                </Link>                              
+                </Link>}                              
             </div>
-            <div className="header__right_mobile">
-                <div>Ham</div>                         
-            </div>            
+            {/* <div className="header__right_mobile">
+            <Link href="/about">
+                    <a className="nav-bar__item">About</a>            
+                </Link>
+                {Router.route !== '/contact' &&             
+                <Link href="/contact">
+                    <a className="nav-bar__item nav-bar__item__quote">Get Free Quote</a>            
+                </Link>}                             
+            </div>             */}
         </div>
         <style jsx>{`
         .header {
@@ -47,9 +55,9 @@ const Header = () => (
             background: #ffffff;
         }
 
-        .header__right_mobile {
+        /*.header__right_mobile {
             display: none;
-        }
+        }*/
 
         .nav-bar__item {
             text-decoration: none;
@@ -80,9 +88,9 @@ const Header = () => (
         }
         
         @media (min-width: 320px) and (max-width: 1023px) {
-            .header__right {
+            /*.header__right {
                 display: none;
-            }
+            }*/
 
             .header__right_mobile {
                 display: block;
