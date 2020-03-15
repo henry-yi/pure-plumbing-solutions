@@ -1,13 +1,14 @@
 const Footer = () => (
     <div className="footer">
-        <div className="footer__inner"><i className="far fa-copyright"></i> 2019 Pure Plumbing Solutions. All rights reserved.</div>
+        <div className="footer__inner"><i className="far fa-copyright"></i> 2020 Pure Plumbing Solutions. All rights reserved.</div>
         <div className="social_media_block">
-            <a className="social_media_icon" href="#">
+            {/* Add Social Media Links here */}
+            {/* <a className="social_media_icon" href="#">
                 <i className="fab fa-facebook-f"></i>
             </a>
             <a className="social_media_icon" href="#">
                 <i className="fab fa-instagram"></i>
-            </a>
+            </a> */}
             <a className="social_media_icon" href="https://www.yelp.com/biz/pure-plumbing-solutions-los-gatos">
                 <i className="fab fa-yelp"></i>
             </a>

@@ -114,7 +114,11 @@ const Header = ({ router }) => (
             .nav-bar__item:hover {
                 color: #2E69A5;
                 transition: 0.3s;
-            }            
+            }
+            
+            .nav-bar__item.nav-bar__item__quote {
+                padding: 0px 16px;
+            }
         }
 
         @media (min-width: 1024px) {
