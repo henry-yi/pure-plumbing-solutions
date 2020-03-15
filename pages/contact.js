@@ -10,7 +10,7 @@ const Contact = () => (
                     <input type="text" name="phone" placeholder="Phone number" />
                     <input type="email" name="email" placeholder="Email address" />
                     <textarea name="message" placeholder="Message"></textarea>
-                    <div className="send-button" type="submit">Send</div>
+                    <button className="send-button" type="submit">Send</button>
                 </form>
             </div>
         </div>
@@ -63,8 +63,8 @@ const Contact = () => (
 
             .send-button {
                 cursor: pointer;
-                width: 52px;
-                height: 24px;
+                width: 84px;
+                height: 35px;
                 background-color: #0D8AF5;
                 color: #FFFFFF;
                 font-family: "Helvetica";
@@ -75,6 +75,7 @@ const Contact = () => (
                 border-radius: 4px;
                 padding: 6px 18px;
                 margin-bottom: 10px;
+                border-style: none;
             }
         `}
         </style>
