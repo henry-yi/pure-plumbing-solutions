@@ -4,7 +4,7 @@ const Contact = () => (
     <Layout>
         <div className="email__form_container">
             <div className="email__welcome">Contact Us</div>
-            <div>
+            <div className="email__form_inner_container">
                 <form className="email__form" action="https://formspree.io/Pureplumbingsolutionsca@gmail.com" method="POST">
                     <input type="text" name="name" placeholder="Name" />
                     <input type="text" name="phone" placeholder="Phone number" />
@@ -31,6 +31,11 @@ const Contact = () => (
                 margin-top: 108px;
             }
 
+            .email__form_inner_container {
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+
             .email__form {
                 width: 100%;
             }
@@ -38,7 +43,7 @@ const Contact = () => (
             .email__form input,
             .email__form textarea
             {
-                width: 100%;
+                width: 95%;
                 margin-top: 5px;
                 font-size: 16px;
                 border-radius: 5px;
@@ -68,6 +73,7 @@ const Contact = () => (
                 text-align: center;
                 border-radius: 4px;
                 padding: 6px 18px;
+                margin-bottom: 10px;
             }
         `}
         </style>
