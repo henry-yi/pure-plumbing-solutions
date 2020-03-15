@@ -17,8 +17,9 @@ const Contact = () => (
                 width: 100%;
                 height: calc(100vh - 125px);
                 display: flex;
-                flex-direction: row;
-                justify-content: center;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
                 flex-wrap: wrap;
             }
 
@@ -26,7 +27,7 @@ const Contact = () => (
                 font-size: 24px;
                 width: 100%;
                 text-align: center;
-                margin-top: 10px;
+                margin-top: 108px;
             }
 
             .email__form {
