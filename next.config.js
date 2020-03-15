@@ -3,6 +3,7 @@ module.exports = {
     return {
       '/': { page: '/' },
       '/about': { page: '/about' },
+      '/contact': { page: '/contact' },
       '/waterheater': { page: '/waterheater' },
       '/seweranddrain': { page: '/seweranddrain' },
       '/gas': { page: '/gas' },
