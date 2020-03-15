@@ -10,9 +10,9 @@ const Header = ({ router }) => (
             
             <div className="header__right">
                 {/* <a className="nav-bar__item nav-bar__item--dropdown">Services</a> */}
-                <Link href="/about">
+                {/* <Link href="/about">
                     <a className="nav-bar__item">About</a>            
-                </Link>
+                </Link> */}
                 {router.pathname !== '/contact' &&             
                 <Link href="/contact">
                     <a className="nav-bar__item nav-bar__item__quote">Get Free Quote</a>            

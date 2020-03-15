@@ -115,6 +115,7 @@ const Index = () => (
             }
 
             .helpCardBox {
+                pointer-events: none;
                 display: flex;
                 justify-content: space-between;
             }
