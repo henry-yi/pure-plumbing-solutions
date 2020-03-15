@@ -20,7 +20,6 @@ const Contact = () => (
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
-                flex-wrap: wrap;
             }
 
             .email__welcome {
