@@ -13,6 +13,7 @@ const Header = ({ router }) => (
                 {/* <Link href="/about">
                     <a className="nav-bar__item">About</a>            
                 </Link> */}
+                <div className="nav-bar__item nav-bar__item__number">510-321-1234</div>
                 {router.pathname !== '/contact' &&             
                 <Link href="/contact">
                     <a className="nav-bar__item nav-bar__item__quote">Get Free Quote</a>            
@@ -81,6 +82,10 @@ const Header = ({ router }) => (
             border-radius: 4px;
             padding: 5px 16px;
             color: #0D8AF5;
+        }
+
+        .nav-bar__item.nav-bar__item__number {
+            font-weight: 600;
         }
 
         .nav-bar__item--dropdown {
