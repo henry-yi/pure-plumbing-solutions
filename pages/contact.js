@@ -4,13 +4,15 @@ const Contact = () => (
     <Layout>
         <div className="email__form_container">
             <div className="email__welcome">Contact Us</div>
-            <form className="email__form" action="https://formspree.io/Pureplumbingsolutionsca@gmail.com" method="POST">
-                <input type="text" name="name" placeholder="Name" />
-                <input type="text" name="phone" placeholder="Phone number" />
-                <input type="email" name="email" placeholder="Email address" />
-                <textarea name="message" placeholder="Message"></textarea>
-                <div className="send-button" type="submit">Send</div>
-            </form>
+            <div className="email__form_inner_container">
+                <form className="email__form" action="https://formspree.io/Pureplumbingsolutionsca@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Name" />
+                    <input type="text" name="phone" placeholder="Phone number" />
+                    <input type="email" name="email" placeholder="Email address" />
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <div className="send-button" type="submit">Send</div>
+                </form>
+            </div>
         </div>
         <style jsx>{`
             .email__form_container {
@@ -29,16 +31,25 @@ const Contact = () => (
                 margin-top: 108px;
             }
 
+            .email__form_inner_container {
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+
             .email__form {
-                width: 40%;
+                width: 100%;
             }
 
             .email__form input,
             .email__form textarea
             {
-                width: 100%;
+                width: 95%;
                 margin-top: 5px;
                 font-size: 16px;
+                border-radius: 5px;
+                border: 1px solid silver;
+                padding: 5px;
+                margin-bottom: 5px;
             }
 
             .email__form textarea {
@@ -62,6 +73,7 @@ const Contact = () => (
                 text-align: center;
                 border-radius: 4px;
                 padding: 6px 18px;
+                margin-bottom: 10px;
             }
         `}
         </style>
