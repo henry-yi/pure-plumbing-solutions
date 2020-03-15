@@ -54,6 +54,7 @@ const Contact = () => (
 
             .email__form textarea {
                 height: 200px;
+                font-family: 'Arial';
             }
 
             .email__form button {
