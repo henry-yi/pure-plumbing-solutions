@@ -52,7 +52,7 @@ const Footer = () => (
 
             .social_media_block {
                 margin-right: 12px;
-                margin-top: 54px;
+                margin-top: 22px;
             }
         }
 

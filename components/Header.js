@@ -35,6 +35,9 @@ const Header = ({ router }) => (
             position: fixed;
             background: #ffffff;
             z-index: 1;
+            -webkit-box-shadow: 0px 4px 9px 0px rgba(0,0,0,0.25);
+            -moz-box-shadow: 0px 4px 9px 0px rgba(0,0,0,0.25);
+            box-shadow: 0px 4px 9px 0px rgba(0,0,0,0.25);
         }
 
         .header__logo-bar {

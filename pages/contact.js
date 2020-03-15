@@ -15,6 +15,7 @@ const Contact = () => (
         <style jsx>{`
             .email__form_container {
                 width: 100%;
+                height: calc(100vh - 125px);
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
