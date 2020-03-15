@@ -115,6 +115,7 @@ const Index = () => (
             }
 
             .helpCardBox {
+                pointer-events: none;
                 display: flex;
                 justify-content: space-between;
             }
@@ -146,6 +147,19 @@ const Index = () => (
                 .cta-box {
                     height: 112px;
                     margin-left: 4.27%;
+                }
+                
+                .helpCards {
+                    margin-top: 80px;
+                    margin-left: 4.27%;
+                }
+
+                .helpCardBox {
+                    flex-direction: column;
+                }
+
+                .helpCards .cta-button {
+                    margin-top: 50px;
                 }
     
                 .cta-text {
@@ -189,7 +203,7 @@ const Index = () => (
 
                 .business-points__title {
                     margin-left: 13%;
-                    padding-top: 38px;
+                    padding-top: 60px;
                     font-size: 40px;
                     line-height: 56px;
                 }
@@ -202,6 +216,7 @@ const Index = () => (
 
                 .promises {
                     height: 410px;
+                    margin-top: -40px;
                 }
             }
 
@@ -242,6 +257,7 @@ const Index = () => (
 
                 .promises {
                     height: 450px;
+                    margin-top: 0px;
                 }
             }          
         `}</style>

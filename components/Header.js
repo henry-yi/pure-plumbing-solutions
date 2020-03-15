@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import { withRouter } from 'next/router';
 
-const Header = () => (
+const Header = ({ router }) => (
     <div className="header">
         <div className="header__logo-bar">
             <Link href="/">
@@ -8,17 +9,25 @@ const Header = () => (
             </Link>
             
             <div className="header__right">
-                <a className="nav-bar__item nav-bar__item--dropdown">Services</a>
-                <Link href="/about">
+                {/* <a className="nav-bar__item nav-bar__item--dropdown">Services</a> */}
+                {/* <Link href="/about">
                     <a className="nav-bar__item">About</a>            
-                </Link>            
+                </Link> */}
+                <div className="nav-bar__item nav-bar__item__number">(408) 891-0720</div>
+                {router.pathname !== '/contact' &&             
                 <Link href="/contact">
                     <a className="nav-bar__item nav-bar__item__quote">Get Free Quote</a>            
-                </Link>                              
+                </Link>}                              
             </div>
-            <div className="header__right_mobile">
-                <div>Ham</div>                         
-            </div>            
+            {/* <div className="header__right_mobile">
+            <Link href="/about">
+                    <a className="nav-bar__item">About</a>            
+                </Link>
+                {Router.route !== '/contact' &&             
+                <Link href="/contact">
+                    <a className="nav-bar__item nav-bar__item__quote">Get Free Quote</a>            
+                </Link>}                             
+            </div>             */}
         </div>
         <style jsx>{`
         .header {
@@ -26,6 +35,9 @@ const Header = () => (
             position: fixed;
             background: #ffffff;
             z-index: 1;
+            -webkit-box-shadow: 0px 4px 9px 0px rgba(0,0,0,0.25);
+            -moz-box-shadow: 0px 4px 9px 0px rgba(0,0,0,0.25);
+            box-shadow: 0px 4px 9px 0px rgba(0,0,0,0.25);
         }
 
         .header__logo-bar {
@@ -47,9 +59,9 @@ const Header = () => (
             background: #ffffff;
         }
 
-        .header__right_mobile {
+        /*.header__right_mobile {
             display: none;
-        }
+        }*/
 
         .nav-bar__item {
             text-decoration: none;
@@ -75,14 +87,18 @@ const Header = () => (
             color: #0D8AF5;
         }
 
+        .nav-bar__item.nav-bar__item__number {
+            font-weight: 600;
+        }
+
         .nav-bar__item--dropdown {
             cursor: pointer; 
         }
         
         @media (min-width: 320px) and (max-width: 1023px) {
-            .header__right {
+            /*.header__right {
                 display: none;
-            }
+            }*/
 
             .header__right_mobile {
                 display: block;
@@ -106,7 +122,11 @@ const Header = () => (
             .nav-bar__item:hover {
                 color: #2E69A5;
                 transition: 0.3s;
-            }            
+            }
+            
+            .nav-bar__item.nav-bar__item__quote {
+                padding: 0px 16px;
+            }
         }
 
         @media (min-width: 1024px) {
@@ -156,4 +176,4 @@ const Header = () => (
     </div>
 )
 
-export default Header;
+export default withRouter(Header);

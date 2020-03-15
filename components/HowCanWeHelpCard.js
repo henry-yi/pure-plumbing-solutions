@@ -6,21 +6,21 @@ const HowCanWeHelpCard = (props) => (
             <div className="cardCircle">
                 <i className={"helpCardIco fas fa-" + props.ico} />
             </div>
-            <p className="cardTitle">{props.title}</p>
+            <div className="cardTitle">{props.title}</div>
             <style jsx>{`
             .cardContainer {
                 background-color: #FFFFFF;  
             }
 
             .cardCircle {
-                cursor: pointer;
+                /*cursor: pointer;*/
                 background-color: #EDF4FF;
                 transition: background-color 0.5s ease;
             }
 
-            .cardCircle:hover {
+            /*.cardCircle:hover {
                 background-color: #C7CED9;
-            }
+            }*/
 
             .cardContent {
                 margin: 30px 0;
@@ -41,17 +41,32 @@ const HowCanWeHelpCard = (props) => (
 
             @media (min-width: 320px) and (max-width: 1023px) {
                 .cardContainer {
-                    width: 310px;
-                    border-bottom: 1px solid black;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
+
+                .cardCircle {
+                    border-radius: 100px;
+                    height: 80px;
+                    width: 80px;
+                    margin: 10px 0px;
+                    text-align: center;
+                    display: inline-block;
                 }
 
                 .helpCardIco {
                     font-size: 31px;
+                    position: relative;
+                    top: calc(50% - 20px);
                 }
 
                 .cardTitle {
+                    display: inline-block;
                     font-size: 20px;
-                    margin: 13px 7px;
+                    margin: 10px;
+                    height: 100%;
                 }
 
                 .cardText {
