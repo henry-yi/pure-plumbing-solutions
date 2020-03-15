@@ -13,7 +13,7 @@ const Header = ({ router }) => (
                 {/* <Link href="/about">
                     <a className="nav-bar__item">About</a>            
                 </Link> */}
-                <div className="nav-bar__item nav-bar__item__number">510-321-1234</div>
+                <div className="nav-bar__item nav-bar__item__number">(408) 891-0720</div>
                 {router.pathname !== '/contact' &&             
                 <Link href="/contact">
                     <a className="nav-bar__item nav-bar__item__quote">Get Free Quote</a>            
