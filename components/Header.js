@@ -5,19 +5,19 @@ const Header = ({ router }) => (
     <div className="header">
         <div className="header__logo-bar">
             <Link href="/">
-                <a className="nav-bar__item nav-bar__item__logo"><div className="header__logo"></div></a>            
+                <a className="nav-bar__item nav-bar__item__logo"><div className="header__logo"></div></a>
             </Link>
-            
+
             <div className="header__right">
                 {/* <a className="nav-bar__item nav-bar__item--dropdown">Services</a> */}
                 {/* <Link href="/about">
                     <a className="nav-bar__item">About</a>            
                 </Link> */}
                 <div className="nav-bar__item nav-bar__item__number">(408) 891-0720</div>
-                {router.pathname !== '/contact' &&             
-                <Link href="/contact">
-                    <a className="nav-bar__item nav-bar__item__quote">Get Free Quote</a>            
-                </Link>}                              
+                {router.pathname !== '/contact' &&
+                    <Link href="/contact">
+                        <a className="nav-bar__item nav-bar__item__quote">Get Free Quote</a>
+                    </Link>}
             </div>
             {/* <div className="header__right_mobile">
             <Link href="/about">
@@ -115,8 +115,13 @@ const Header = ({ router }) => (
             }
 
             .nav-bar__item {
-                margin: 0 23px;
-                font-size: 18px;
+                margin: 0 1px;
+                font-size: 12px;
+                line-height: 12px;
+            }
+
+            .nav-bar__item__number {
+                margin-right: 6px;
             }
 
             .nav-bar__item:hover {
@@ -125,7 +130,7 @@ const Header = ({ router }) => (
             }
             
             .nav-bar__item.nav-bar__item__quote {
-                padding: 0px 16px;
+                padding: 4px;
             }
         }
 
