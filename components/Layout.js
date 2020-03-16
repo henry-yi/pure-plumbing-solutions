@@ -9,6 +9,7 @@ const Layout = (props) => (
             <link rel="icon" href="/static/logo.png"></link>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossOrigin="anonymous"></link>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta name="google-site-verification" content="5Jn96jszkMDssHCXC67pzs9ikuNnxMo8_Jex_M2X0q0" />
         </Head>
         <Header />
         { props.children }
